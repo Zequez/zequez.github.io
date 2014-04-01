@@ -1,0 +1,38 @@
+.highlight
+  clear: both
+  position: relative
+  width: 100%
+  padding: 10px 0px 10px 10px
+  margin-top: 39px
+  background-color: $codeBgColor
+  border-radius: 3px
+
+  -webkit-transition: width 1s ease
+
+  pre
+    padding-right: 10px
+    overflow: hidden
+
+  code
+    font-size: 13px
+    font-family: "Lucida Console", Monaco, monospace!important
+
+    &.javascript:before
+      content: 'JavaScript'
+    &.ruby:before
+      content: 'Ruby'
+    &.coffeescript:before
+      content: 'CoffeeScript'
+    &.php:before
+      content: 'PHP'
+
+    &:before
+      position: absolute
+      top: -22px
+      left: 0px
+      padding: 5px
+      background-color: $codeBgColor
+      border-radius: 3px 3px 0px 0px
+      color: $fadedColor
+      line-height: 20px
+

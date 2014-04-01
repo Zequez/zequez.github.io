@@ -1,0 +1,25 @@
+---
+layout: default
+title: Zequez (humano)
+---
+
+<section class="index">
+	<h1>Literalmente el índice</h1>
+	<ul class="index-posts">
+    {% for post in site.posts %}
+      <li class="index-post" data-categories="{{post.categories | json | escape}}">
+      	<date class="index-post-date">
+          <span class="date-day">{{ post.date | localize: '%-d'}}</span>
+          <span class="date-month">{{ post.date | localize: '%b'}}</span>
+          <span class="date-year">{{ post.date | localize: '%Y'}}</span>
+				</date>
+        <span class="lang-tag" data-lang="{{ post.lang }}" title="{{ 'language' | t: post.lang }}">
+          {{ post.lang }}
+        </span>
+				<a class="index-post-title" href="{{ post.url }}" title="{{ post.title | escape }}">
+					{{ post.title }}
+				</a>
+    	</li>
+    {% endfor %}
+	</ul>
+</section>

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<section class="category-index">
+  <h1>{{page.category}}</h1>
+  <ul class="index-posts">
+    {% for post in site.categories[page.category] %}
+      <li class="index-post" data-categories="{{post.categories | json | escape}}">
+        <date class="index-post-date">
+          <span class="date-day">{{ post.date | localize: '%-d'}}</span>
+          <span class="date-month">{{ post.date | localize: '%b'}}</span>
+          <span class="date-year">{{ post.date | localize: '%Y'}}</span>
+        </date>
+        <span class="lang-tag" data-lang="{{ post.lang }}" title="{{ 'language' | t: post.lang }}">
+          {{ post.lang }}
+        </span>
+        <a class="index-post-title" href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

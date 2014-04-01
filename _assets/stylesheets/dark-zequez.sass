@@ -1,0 +1,58 @@
+body.dark-zequez
+  background-color: #111
+
+  .anti-egg
+    display: block
+
+  .egg
+    display: none
+
+  .header-logo
+    background: none
+    color: #000
+    color: rgba(#000, 0.4)
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.98,-0.01,.84,1.2)
+    -webkit-transform-origin: 0 50% 0
+    -webkit-transform: perspective(250px) rotateZ(3deg)
+
+  .author
+    padding-left: 30px
+    margin-left: -10px
+    background-image: url(asset_path('hanged.png'))
+    color: grey
+
+  .categories-list li
+    &:before
+      color: grey
+    a
+      .category-count, &
+        color: grey
+
+  .page
+    background-color: grey
+
+    a
+      color: #aaa
+
+    .image-border
+      border-color: grey
+      background-color: grey
+
+      img
+        border-top-color: darken(grey, 15%)
+        border-bottom-color: lighten(grey, 15%)
+
+    .copyright
+      color: #aaa
+
+    .post-date
+      color: #aaa
+
+  .category-index
+    h1:before
+      color: #aaa
+
+  .lang-tag
+    color: #aaa
+    &[data-lang='es'], &[data-lang='en']
+      background-color: lighten(grey, 5%) // Depression grey
