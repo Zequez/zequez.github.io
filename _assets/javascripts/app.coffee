@@ -1,7 +1,7 @@
 $ = -> document.querySelectorAll.apply(document, arguments)
 Element.prototype.$ = -> this.querySelectorAll.apply(this, arguments)
 Element.prototype.toggleClass = (className, toggle)->
-  regex = new RegExp("\\b#{className}\\b")
+  regex = new RegExp("(^| )#{className}($| )")
   if (toggle)
     if not regex.test this.className
       this.className += ' ' + className
@@ -62,7 +62,21 @@ for high in $('.highlight')
 ######
 
 depreMode = (activated = true)->
-  document.body.toggleClass('dark-zequez', activated)
+  b = document.body
+  # When we change the body background, it won't repaint unscrolled areas on Webkit
+  # so we need to force repainting, but if we do, the transitions will run instantly
+  # So well, we have to use an extra class
+  b.toggleClass('dark-zequez-body-repaint-fix', activated)
+  previousScroll = b.scrollTop
+  b.style.display = 'none'
+  b.offsetHeight
+  b.style.display = ''
+  b.scrollTop = previousScroll
+
+  setTimeout ->
+    document.body.toggleClass('dark-zequez', activated)
+  , 10
+  
 
 if localStorage.depre
   lastDepre = parseInt localStorage.depre
