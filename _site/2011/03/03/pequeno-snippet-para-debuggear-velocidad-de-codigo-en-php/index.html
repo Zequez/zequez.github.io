@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Pequeño snippet para debuggear velocidad de código en PHP</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/assets/highlight-syntax-ecb19abae56c4acfbb0e49f4dcd4cb07.css">
+<link rel="stylesheet" href="/assets/fonts-00ada629764bf427d4062427f6ce9cb4.css">
+<link rel="stylesheet" href="/assets/app-ab99b6e79373bb62457b8bc2d708a88f.css">
+    </head>
+    <body>
+      <main class="main">
+
+        <header class="header">
+          <a href="/" 
+             class="header-logo" 
+             title="Cosas mías y algunas cosas útiles... En Jekyll!">
+             Zequez
+          </a>
+          <div class="egg" title="Activar modo deprimente">D:</div>
+        </header>
+
+        <nav class="sidebar">
+          <address class="author">
+            <img class="author-picture"
+                 src="/assets/profile-2017e1fd0b4ec94810d071ba3320d1ad.jpg" 
+                 srcc="http://graph.facebook.com/zequez/picture"/>
+            <div class="author-name">
+              Ezequiel Adrián<br/><strong>Zequez</strong> Schwartzman
+            </div>
+            <div class="author-social">
+              <a href="http://facebook.com/zequez">Facebook</a>
+              | <a href="http://github.com/zequez">Github</a>
+              | <a href="http://reddit.com/user/zequez" 
+                   title="Por qué mierda pongo mi cuenta de Reddit acá???">
+                   Reddit
+                </a>
+            </div>
+            <div class="author-about">
+              Hola. Soy otro desarrollador web. Soy estudiante de ingeniería. Soy un inventor. Un emprendedor. Un humanista. No soy un genio. Tengo muchos defectos. Me deprimo y me alegro. Me caigo y me levanto. Voy, y vuelvo. Un humano culquiera, caminando en este mundo raro.
+            </div>
+          </address>
+          <ul class="categories-list">
+            
+              <li class=""
+                ><a href="/vida">
+                  vida
+                  <span class="category-count">8</span>
+                </a>
+              </li>
+            
+              <li class=" perma-active "
+                ><a href="/scripts">
+                  scripts
+                  <span class="category-count">8</span>
+                </a>
+              </li>
+            
+              <li class=""
+                ><a href="/aplicaciones">
+                  aplicaciones
+                  <span class="category-count">6</span>
+                </a>
+              </li>
+            
+              <li class=""
+                ><a href="/videojuegos">
+                  videojuegos
+                  <span class="category-count">2</span>
+                </a>
+              </li>
+            
+              <li class=" perma-active "
+                ><a href="/guías">
+                  guías
+                  <span class="category-count">7</span>
+                </a>
+              </li>
+            
+              <li class=""
+                ><a href="/addons">
+                  addons
+                  <span class="category-count">2</span>
+                </a>
+              </li>
+            
+              <li class=""
+                ><a href="/mapa-de-transporte">
+                  mapa de transporte
+                  <span class="category-count">2</span>
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+
+        <section class="page">
+          <article class="post">
+	
+	<date class="post-date">
+		<span class="date-day-name">jueves</span>
+	  <span class="date-day">3</span><br/>
+	  <span class="date-month">marzo</span>
+	  <span class="date-year">2011</span>
+	</date>
+	<h1 class="post-title">
+		Pequeño snippet para debuggear velocidad de código en PHP
+		<span class="lang-tag" data-lang="es" title="Español">
+  		es
+    </span>
+  </h1>
+	<section class="post-content">
+		<p>Si sos como yo, que -todavía- no usa xDebug en PHP pero querés saber por qué tu script anda lento, y escribir microtime() cada 5 líneas te tiene harto, entonces usá esta pequeñísima función que lo único que tenés que hacer es llamarla con un nombre y listo.</p>
+
+<div class="highlight"><pre><code class="php"><span class="cp">&lt;?php</span>
+<span class="k">function</span> <span class="nf">lap</span><span class="p">(</span><span class="nv">$name</span> <span class="o">=</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">static</span> <span class="nv">$last</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nv">$now</span> <span class="o">=</span> <span class="nb">microtime</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;Lap </span><span class="si">$name</span><span class="s2"> &quot;</span> <span class="o">.</span> <span class="p">(</span><span class="nv">$now</span><span class="o">-</span><span class="nv">$last</span><span class="p">)</span> <span class="o">.</span> <span class="s2">&quot; seconds!&lt;br/&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$last</span> <span class="o">=</span> <span class="nv">$now</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</code></pre></div>
+
+<p>El uso sería así:</p>
+
+<div class="highlight"><pre><code class="php"><span class="cp">&lt;?php</span>
+<span class="nx">lap</span><span class="p">();</span>
+<span class="nx">funcionQueTardaPoco</span><span class="p">();</span>
+<span class="nx">lap</span><span class="p">(</span><span class="s1">&#39;primer función&#39;</span><span class="p">);</span>
+<span class="nx">funcionQueTardaMucho</span><span class="p">();</span>
+<span class="nx">lap</span><span class="p">(</span><span class="s1">&#39;segunda funcion&#39;</span><span class="p">);</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</code></pre></div>
+
+<p>Y el resultado sería algo así:</p>
+
+<div class="highlight"><pre><code class="php"><span class="cp">&lt;?php</span>
+<span class="nx">Lap</span> <span class="nx">primer</span> <span class="nx">funci</span><span class="err">ó</span><span class="nx">n</span> <span class="mf">0.0090179443359375</span> <span class="nx">seconds</span><span class="o">!</span>
+<span class="nx">Lap</span> <span class="nx">segunda</span> <span class="nx">funci</span><span class="err">ó</span><span class="nx">n</span> <span class="mf">1.4245828127234901</span> <span class="nx">seconds</span><span class="o">!</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</code></pre></div>
+
+<p>Me pareció útil así que la postié xD</p>
+
+	</section>
+</article>
+
+          <!--<section class="pagination">
+            <div class="pagination-past">Pasado</div>
+            <div class="pagination-future">Futuro</div>
+          </section>-->
+
+          <footer class="footer">
+            <div class="copyright" title="Todos los derechos reservables reservados. Pero todavía quedan entradas para los izquierdos. ¡Apurate que se agotan!">&copy; Zequez 2014</div>
+          </footer>
+        </section>
+
+      </main>
+      <div class="anti-egg"></div>
+      <script src="/assets/app-d229db1c5b0be23eb6591e9c1775c09f.js"></script>
+    </body>
+</html>
