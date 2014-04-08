@@ -30,3 +30,7 @@ task :deploy do
   status = system("git push --all origin")
   puts status ? "Success" : "Failed"
 end
+
+desc "Commit and deploy _site/"
+  task :commit_deploy => [:commit, :deploy] do
+end
