@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Facebook Chat Updater</title>
+        <title>Deploying Jekyll with plugins to Github pages: the easy way</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="/assets/highlight-syntax-ecb19abae56c4acfbb0e49f4dcd4cb07.css">
 <link rel="stylesheet" href="/assets/fonts-00ada629764bf427d4062427f6ce9cb4.css">
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="author-about">
-              Hola. Soy otro desarrollador web. Soy estudiante de ingeniería. Soy un inventor. Un emprendedor. Un humanista. No soy un genio. Tengo muchos defectos. Me deprimo y me alegro. Me caigo y me levanto. Voy, y vuelvo. Un humano culquiera, caminando en este mundo raro.
+              Hi. I’m just another web developer. I’m an ingineering student. I’m an inventor. I’m an entrepreneur. I’m a humanist. I’m not genius. I’m filled with defects. I get depressed and euphoric. I fall and I stand up. I go, an I come back. As human as any other, walking this strange world.
             </div>
           </address>
           <ul class="categories-list">
@@ -50,7 +50,7 @@
                 </a>
               </li>
             
-              <li class=" perma-active "
+              <li class=""
                 ><a href="/scripts">
                   scripts
                   <span class="category-count">8</span>
@@ -78,7 +78,7 @@
                 </a>
               </li>
             
-              <li class=" perma-active "
+              <li class=""
                 ><a href="/addons">
                   addons
                   <span class="category-count">2</span>
@@ -99,36 +99,46 @@
           <article class="post">
 	
 	<date class="post-date">
-		<span class="date-day-name">miércoles</span>
-	  <span class="date-day">2</span><br/>
-	  <span class="date-month">febrero</span>
-	  <span class="date-year">2011</span>
+		<span class="date-day-name">Tuesday</span>
+	  <span class="date-day">8</span><br/>
+	  <span class="date-month">April</span>
+	  <span class="date-year">2014</span>
 	</date>
 	<h1 class="post-title">
-		Facebook Chat Updater
-		<span class="lang-tag" data-lang="es" title="Español">
-  		es
+		Deploying Jekyll with plugins to Github pages: the easy way
+		<span class="lang-tag" data-lang="en" title="English">
+  		en
     </span>
   </h1>
 	<section class="post-content">
-		<div class="image-right image-container" ><a href="/uploads/2011/02/facebook-chat-new.jpg" class="image-border" title='Facebook chat'><img src="/uploads/2011/02/facebook-chat-new-320x320-51b36b.jpg" /></a></div>
+		<p>So, you got really excited about migrating your blog to Jekyll. You thought about all those plugins! Images conversions and risizing! Assets pipelines! Minificatino! Internationalization! All working seemingless and wonderfully!</p>
 
-<p>¿Cansados de querer hablarle a una persona por el chat de Facebook y que en el mismísimo momento en que le están por escribir se desconecta? Bueno, yo sí.</p>
+<p>You designed your blog with the most cutting edge technologies, modified and created plugins to adapt to your desires... And then... You realized that Github will take none of that. Github will run none of your plugins.</p>
 
-<p>Esto sucede porque Facebook actualiza la lista personas conectadas en el chat de manera poco frecuente, y siempre que vas a comenzar a hablarle a una persona.</p>
+<p>But.. but...! There must be a way! You thought. And after googling you found guides <a href="http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/">like these</a>.</p>
 
-<p>Tras una tarde de ingeniería inversa en el debugger de Chrome logré descifrar de manera precaria como es que funciona el cliente de Facebook y di con la forma de actualizar la lista de amigos manualmente:</p>
+<p>Well, these guides don&#39;t explain it very well, but what&#39;s actually happening there is that you are creating a new branch with all the source files that Jekyll won&#39;t run. And then you are creating a branch with only the contents of <code>_site</code>, and Github will think is a Jekyll app, and it will compile it with Jekyll, and since those are just static files, will compile in the same thing.</p>
 
-<div class="highlight"><pre><code class="javascript">  <span class="nx">Arbiter</span><span class="p">.</span><span class="nx">_instance</span><span class="p">.</span><span class="nx">_events</span><span class="p">[</span><span class="s2">&quot;buddylist/initialized&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">].</span><span class="nx">_forceUpdate</span><span class="p">();</span>
+<p>Anyway. If you are like me, you might have all your projects on Dropbox or any other cloud backup system. The problem with these methods is that when you switch between <code>master</code> and <code>source</code> and you start deleting and creating hundreds of files in seconds, Dropbox goes bananas.</p>
+
+<p>So I decided to use a different approach. Instead of doing everything in the same place... why not use just 2 folders? One with the source and one with the <code>_site</code>?</p>
+
+<p>So here is what I did:</p>
+
+<p>My blog was on <code>MyJekyll/</code> so, instead, I moved all my files to <code>MyJekyll/source/</code>.</p>
+
+<p>Then copy your <code>.git</code> folder from <code>MyJekyll/source</code> to <code>MyJekyll/_site</code>. Easy enough.</p>
+
+<p>On <code>/source</code> change your branch to <code>source</code>. And on <code>_site</code> just delete everything and keep using <code>master</code>.</p>
+
+<p>Now go to your <code>_config.yml</code> on <code>source/</code> folder. And add:</p>
+
+<div class="highlight"><pre><code class="yaml">  <span class="l-Scalar-Plain">destination</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">../_site</span>
 </code></pre></div>
 
-<p>Si pegan el código en la barra de navegación con un &quot;javascript:&quot; detrás de este podrán ver como se actualiza la lista, y si tienen la consola abierta también verá como es que hace un llamado a la dirección &quot;http://www.facebook.com/ajax/chat/buddy<em>list.php?</em>_a=1&quot; mediante AJAX.</p>
+<p>Now when you compile your site, the results are going to be on the <code>MyJekyll/_site</code> folder. After you finish your editing just <code>cd</code> to that folder and commit it as normal.</p>
 
-<p>Claro, podrían pegar el código con un setInterval cada vez que entran a Facebook... pero sería muy engorroso. Por esta razón decidí escribir una extensión para Google Chrome -la primera extensión que he hecho- que actualiza la lista de amigos conectados cada 3 segundos una vez que carga la página...</p>
-
-<p><a title="Descargar extensión Facebook Chat Updater para Google Chrome" href="http://dl.dropbox.com/u/3682061/blog/zequez/facebookChatUpdater.crx">Descargar extensión Facebook Chat Updater para Google Chrome</a></p>
-
-<p>Siéntanse libres de hacer una extensión para su navegador web favorito usando <code>Arbiter._instance._events[&quot;buddylist/initialized&quot;][0]._forceUpdate();</code></p>
+<p>Done, no constant branch deleting and wizardly <code>filter-branch</code> stuff.</p>
 
 	</section>
 </article>
