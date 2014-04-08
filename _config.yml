@@ -3,7 +3,8 @@ markdown: redcarpet
 highlighter: true
 permalink: /:year/:month/:day/:title
 default_lang: es
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock']
+destination: ../_site
 assets:
   js_compressor:  uglifier
   css_compressor: sass
