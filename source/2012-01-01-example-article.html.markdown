@@ -1,5 +1,5 @@
 ---
-title: Example Article
+title: Example Articlee
 date: 2012-01-01
 tags: example
 ---

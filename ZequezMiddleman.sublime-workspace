@@ -1,0 +1,521 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"to",
+				"to"
+			],
+			[
+				"generat",
+				"generate_thumbnail_url"
+			],
+			[
+				"thumb",
+				"thumbnail_url"
+			],
+			[
+				"if",
+				"if	if … end"
+			],
+			[
+				"match",
+				"match"
+			],
+			[
+				"IMGUR",
+				"IMGUR_ALBUM_URLS"
+			],
+			[
+				"mod",
+				"mod	module .. ClassMethods .. end"
+			],
+			[
+				"imgur_",
+				"imgur_extension"
+			],
+			[
+				"im",
+				"imgur_id"
+			],
+			[
+				"imgu",
+				"imgur_album_id"
+			],
+			[
+				"ex",
+				"extract_github_path"
+			],
+			[
+				"be_valid",
+				"be_valid"
+			],
+			[
+				"ry",
+				"rhythm"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"settin",
+				"Preferences: Settings - Default"
+			],
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"sssa",
+				"Set Syntax: Sass"
+			],
+			[
+				"ssjsc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"error",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"theme",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/zequez/Dropbox/projects/ruby/ZequezMiddleman"
+	],
+	"file_history":
+	[
+		"/Users/zequez/Downloads/c115/c115.Asm",
+		"/Users/zequez/Downloads/r2-motog-superboot/superboot-mac.sh",
+		"/Users/zequez/Downloads/c115/display.sch",
+		"/Users/zequez/Dropbox/projects/ruby/PaypalGuesser/guesser.rb",
+		"/Users/zequez/Dropbox/projects/JavaScript/MyLittleUniverse/source/javascripts/MLU.coffee",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/fixtures/vcr_cassettes/Imgur/_url/should_be_invalid_without_an_image_src_in_the_page.yml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/lib/media_links/imgur.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/lib/scraper/base.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/lib/scraper.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/schema.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/views/mods/show.html.haml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/models/forum_post.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/lib/forum_post_scraper.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/admin/forum_post.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/factorio_mods.sublime-project",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/production.sqlite3",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.git-old/hooks/post-update.sample",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/spec_helper.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/bin/spring",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/lib/media_links/imgur_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20150303061050_add_imgur_to_mods.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20150303060730_add_imgur_extension_to_mods.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20150224201733_add_imgur_album_id_to_mod.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/views/mods/index.html.haml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/lib/media_links.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/controllers/static_controller.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20140715232152_add_description_to_mods.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/config/application.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/config/imgur.yml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/features/index_mod_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20140709033554_add_attachment_image_to_mod_assets.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20140715043515_add_icon_class_to_categories.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/tmp/cache/assets/development/sprockets/add3e99acfd18cd9040c72ac3846b41b",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/features/new_mod_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/config/locales/en.yml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/models/mod_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/views/mods/_mod_data_table.html.haml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/features/show_mod_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/lib/media_links/manager.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/lib/media_links/manager_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/lib/media_links/gfycat.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/assets/stylesheets/mods/index.css.sass",
+		"/Users/zequez/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/views/mods/new.html.haml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/Gemfile",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/models/download.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.git-old/description",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.idea/dataSources.xml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.idea/dataSources.ids",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/config/database.yml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20141003142707_add_forum_url_and_media_link_to_mods.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.idea/modules.xml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/models/mod_asset.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/models/mod_game_version.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/models/admin_ability.rb",
+		"/Users/zequez/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/zequez/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/zequez/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.git-old/info/exclude",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/config/initializers/filter_parameter_logging.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/guard_with_virtual_display.sh",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20140720223441_add_game_version_start_end_to_mod_version.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20140709060645_add_name_to_users.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20140801005051_remove_all_the_trash_columns_and_tables.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.idea/encodings.xml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/test.sqlite3",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/views/layouts/_footer.html.haml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.gitignore",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/assets/stylesheets/layout.css.sass",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.git-old/index",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/models/mod.rb",
+		"/Users/zequez/Library/Application Support/Sublime Text 3/Packages/MruOpenFiles/MruOpenFiles.sublime-settings",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/app/admin/mod.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/routing/mods_routes_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/spec/models/mod_asset_spec.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/.idea/misc.xml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/Gemfile.lock",
+		"/Users/zequez/Downloads/pomodori-0.6/Rakefile",
+		"/Users/zequez/Downloads/pomodori-0.6/README.rdoc",
+		"/Users/zequez/Library/Application Support/Karabiner/private.xml",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/db/migrate/20140723230459_add_group_id_to_game_versions.rb",
+		"/Users/zequez/Dropbox/projects/rails/factorio_mods/public/assets/active_admin/index_list_icons/grid_icon-cfc670d5a8fb2da5f6970bfa98adb45b.svg",
+		"/Users/zequez/Dropbox/projects/extensions/WhatsappTabNextChat/inject.js",
+		"/Users/zequez/.bash_profile",
+		"/Users/zequez/Dropbox/projects/.bashrc",
+		"/Users/zequez/.bashrc"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"@types"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"SCLK",
+			"ENVICOM",
+			"K",
+			"Ezequiel Schwartzman",
+			"image_src",
+			"webmock",
+			"nil",
+			"be_invalid",
+			"be_valid",
+			"expect(mod)",
+			"mod.image_url",
+			"mod.imgur",
+			"mod.imgur_",
+			"'http://i.imgur.com/5xnCbtjs.jpg'",
+			"imgur_is_album",
+			"          \n",
+			"imgur_id",
+			"imgur_album",
+			"github",
+			"github_url",
+			"github",
+			"gfy",
+			"@@types",
+			"mod",
+			"save",
+			"scroll",
+			"imgur",
+			"time",
+			"sass-rails",
+			"tab",
+			"sprockets",
+			"sass-rails",
+			"sass",
+			">\n",
+			"FN",
+			"CONTROL_L",
+			"switch_profile",
+			"L",
+			"prismata"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Zequez",
+			"eq false",
+			"eq true",
+			"expect(imgur.valid?)",
+			"imgur.url",
+			"imgur.to_s",
+			"imgur."
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ZequezMiddleman.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"scraperbase",
+				"lib/scraper/base.rb"
+			],
+			[
+				"spechel",
+				"spec/rails_helper.rb"
+			],
+			[
+				"imgur",
+				"lib/media_links/imgur.rb"
+			],
+			[
+				"medialinksmanager",
+				"lib/media_links/manager.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"addimgurtomo",
+				"db/migrate/20150303061050_add_imgur_to_mods.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"imgurid",
+				"db/migrate/20150224201733_add_imgur_album_id_to_mod.rb"
+			],
+			[
+				"addimgur",
+				"db/migrate/20150224201733_add_imgur_album_id_to_mod.rb"
+			],
+			[
+				"modspec",
+				"spec/models/mod_spec.rb"
+			],
+			[
+				"newmods",
+				"spec/features/new_mod_spec.rb"
+			],
+			[
+				"en",
+				"config/locales/en.yml"
+			],
+			[
+				"mod",
+				"app/models/mod.rb"
+			],
+			[
+				"data",
+				"app/views/mods/_mod_data_table.html.haml"
+			],
+			[
+				"show",
+				"app/views/mods/show.html.haml"
+			],
+			[
+				"showmods",
+				"spec/features/show_mod_spec.rb"
+			],
+			[
+				"showmodspe",
+				"spec/features/show_mod_spec.rb"
+			],
+			[
+				"newmodsp",
+				"spec/features/new_mod_spec.rb"
+			],
+			[
+				"medialikmana",
+				"spec/lib/media_links/manager_spec.rb"
+			],
+			[
+				"medialink",
+				"lib/media_links.rb"
+			],
+			[
+				"en.",
+				"config/locales/en.yml"
+			],
+			[
+				"new",
+				"app/views/mods/new.html.haml"
+			],
+			[
+				"layou",
+				"app/views/layouts/_footer.html.haml"
+			],
+			[
+				"index",
+				"app/views/mods/index.html.haml"
+			],
+			[
+				"modrb",
+				"app/models/mod.rb"
+			],
+			[
+				"modasse",
+				"app/models/mod_asset.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"giti",
+				".gitignore"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"play",
+				"~/Dropbox/projects/ruby/playtimeforthebuck/playtimeforthebuck.sublime-project"
+			],
+			[
+				"",
+				"~/Dropbox/projects/ruby/playtimeforthebuck/playtimeforthebuck.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

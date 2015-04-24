@@ -1,0 +1,69 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title
+      Zequez -
+      = current_page.data.title
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    = stylesheet_link_tag "all"
+    = javascript_include_tag  "all"
+  %body{class: page_classes}
+    .container
+      %header.header
+        %h1.author
+          %a{href: '/'} Zequez
+        %p A simple place to write about the stuff I make, do, and think
+      %nav.sidebar
+        %section.sidebar-section
+          %h1 Software Projects
+          %ul
+            %li
+              %a{href: "#"} List
+            %li
+              %a{href: "#"} Of software
+            %li
+              %a{href: "#"} Projects that are awesome
+            %li
+              %a{href: "#"} Oh yes
+        %section.sidebar-section
+          %h1 Hardware Projects
+          %ul
+            %li 
+              %a{href: "#"} My super Arduino game 
+            %li
+              %a{href: "#"} My super mouse
+            %li
+              %a{href: "#"}
+                A spanish project!?
+                %i.spanish-warning{title: "This post is in Spanish"} *
+            %li
+              %a{href: "#"} Automatic Popcorn Machine
+            %li
+              %a{href: "#"} Ghetto 3D printer
+        %section.sidebar-section
+          %h1
+            %a{href: "#"} List of all the posts
+        %section.sidebar-section
+          %h1
+            %a{href: "#"} About me / Contact
+      %main.main
+        = yield
+      %footer.footer
+        Copysomethings &copy; Ezequiel A. Schwartzman, Zequez #{Time.now.year}
+    / %aside
+    /   %h2 Recent Articles
+    /   %ol
+    /     - blog.articles[0...10].each do |article|
+    /       %li
+    /         = link_to article.title, article
+    /         %span= article.date.strftime('%b %e')
+    /   %h2 Tags
+    /   %ol
+    /     - blog.tags.each do |tag, articles|
+    /       %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+    /   %h2 By Year
+    /   %ol
+    /     - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    /       %li= link_to "#{year} (#{articles.size})", blog_year_path(year)

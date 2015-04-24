@@ -69,20 +69,22 @@ page "/feed.xml", layout: false
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload, no_swf: true, host: '127.0.0.1'#, port: 9292
 
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
 #     "Helping"
 #   end
-# end
+#
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+sprockets.append_path File.join root, 'bower_components'
 
 # Build-specific configuration
 configure :build do

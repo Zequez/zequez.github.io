@@ -1,0 +1,54 @@
+@import 'compass/reset'
+@import 'compass/typography/vertical_rhythm'
+@import 'compass/utilities/general/clearfix'
+@import 'compass/css3/box-shadow'
+@import 'compass/css3/transform'
+@import 'compass/css3/transition'
+@import 'compass/css3/appearance'
+@import 'susy'
+
+$color-background: #f5f7fc
+$color-black: #343535
+$color-white: #fefefe
+$color-gray: #7c7c7c
+$color-blue: #336d85
+
+body
+  background: $color-background
+  font-size: 16px
+
+a
+  color: $color-blue
+
+.container
+  +container(60em)
+
+.header
+  +span(12 of 12)
+  text-align: center
+  .author
+    font-size: 7em
+
+.sidebar
+  +span(3 of 12)
+  h1
+    font-size: 1.2em
+
+.main
+  +span(9 of 12 omega)
+  background: $color-white
+
+.footer
+  +span(12 of 12)
+
+// / .blog-index
+// /   +span(4 of 12)
+// /   background: white
+
+// / .projects-index
+// /   +span(4 of 12)
+// /   background: white
+
+// / .about-index
+// /   +span(4 of 12 omega)
+// /   background: white
