@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif)
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic)
+
 @import 'compass/reset'
 @import 'compass/typography/vertical_rhythm'
 @import 'compass/utilities/general/clearfix'
@@ -12,43 +15,75 @@ $color-black: #343535
 $color-white: #fefefe
 $color-gray: #7c7c7c
 $color-blue: #336d85
+$color-blue: #4696b7
+
+$base-font-size: 16px
+$base-line-height: 24px
+$rhythm-unit: "px"
+
+$font-family-titles: 'Bree Serif', serif
+$font-family-content: 'Arvo', serif
+
+@import 'grid'
+
+*
+  box-sizing: border-box
 
 body
   background: $color-background
-  font-size: 16px
+
+  +adjust-font-size-to(1rem)
+  font-family: $font-family-content
+  color: $color-black
+
+h1, h2, h3, h4
+  font-family: $font-family-titles
 
 a
   color: $color-blue
-
-.container
-  +container(60em)
+  &:hover
+    color: $color-gray
+  
 
 .header
-  +span(12 of 12)
+  padding: +rhythm(1) 0
   text-align: center
   .author
-    font-size: 7em
+    +adjust-font-size-to(5rem)
+    a
+      text-decoration: none
+      color: $color-black
+  .slogan
+    color: $color-gray
+    font-family: $font-family-titles
+    +adjust-font-size-to(1.3rem)
 
 .sidebar
-  +span(3 of 12)
+  text-align: right
+  a
+    text-decoration: none
   h1
-    font-size: 1.2em
+    +adjust-font-size-to(1.3rem)
+    white-space: nowrap
+    a
+      color: $color-black
+
+  li a
+    color: $color-gray
+
+  .spanish-warning
+    color: red
+    font-weight: bold
+    padding-left: 5px
 
 .main
-  +span(9 of 12 omega)
+  padding: +rhythm(2)
+  border-radius: 2px
   background: $color-white
 
 .footer
-  +span(12 of 12)
+  +adjust-font-size-to(0.8rem, 2)
+  text-align: center
+  color: $color-gray
 
-// / .blog-index
-// /   +span(4 of 12)
-// /   background: white
-
-// / .projects-index
-// /   +span(4 of 12)
-// /   background: white
-
-// / .about-index
-// /   +span(4 of 12 omega)
-// /   background: white
+@import 'menu-sidebar'

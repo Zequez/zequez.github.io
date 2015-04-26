@@ -1,0 +1,35 @@
+.container
+  +container(1100px)
+  position: relative
+  left: - 1100px * 2/12 // Half of the sidebar
+
+.header
+  +span(8 of 12 omega)
+  +pre(4 of 12)
+
+.sidebar
+  +span(4 of 12)
+
+.main
+  +span(8 of 12 omega)
+
+.footer
+  +span(8 of 12 omega)
+
+@media screen and (max-width: 1100px * 14/12)
+  .container
+    left: 0
+
+@media screen and (max-width: 768px)
+  .header
+    +span(full)
+    +pre(0 of 12)
+
+  .sidebar
+    +span(full)
+
+  .main
+    +span(full)
+
+  .footer
+    +span(full)
