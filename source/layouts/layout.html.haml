@@ -8,14 +8,15 @@
       = current_page.data.title
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     = stylesheet_link_tag "all"
-    = javascript_include_tag  "all"
   %body{class: page_classes}
     .container
       %header.header
         %h1.author
           %a{href: '/'} Zequez
         %p.slogan A simple place to write about the stuff I make, do, and think
-      %nav.sidebar
+      %nav.sidebar#sidebar
+        .sidebar-overlay#sidebar-overlay
+        .sidebar-button#sidebar-button
         %section.sidebar-section
           %h1 Software Projects
           %ul
@@ -52,6 +53,7 @@
         = yield
       %footer.footer
         Copysomethings &copy; Ezequiel A. Schwartzman, Zequez #{Time.now.year}
+    = javascript_include_tag  "all"
     / %aside
     /   %h2 Recent Articles
     /   %ol
