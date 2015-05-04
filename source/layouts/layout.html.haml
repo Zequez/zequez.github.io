@@ -18,31 +18,18 @@
         .sidebar-overlay#sidebar-overlay
         .sidebar-button#sidebar-button
         %section.sidebar-section
-          %h1 Software Projects
-          %ul
-            %li
-              %a{href: "/projects/factorio-mods"} Factorio Mods (database/manager)
-            %li
-              %a{href: "/projects/prismata-reddit-extension"} Prismata Reddit Extension
-            %li
-              %a{href: "/projects/playtime-for-the-buck"} Playtime For The Buck
-            %li
-              %a{href: "/projects/mapa-de-transporte"} Mapa de Transporte
-        %section.sidebar-section
-          %h1 Hardware Projects
-          %ul
-            %li 
-              %a{href: "/projects/first-half-decent-arduino-thingy"} First half-decent Arduino thingy
-            %li
-              %a{href: "/projects/porta-herramientas"}
-                Porta Herramientas
-                %i.spanish-warning{title: "This post is in Spanish"} *
-        %section.sidebar-section
-          %h1
-            %a{href: "#"} List of all the posts
-        %section.sidebar-section
-          %h1
-            %a{href: "#"} About me / Contact
+          - data.sidebar.items.each do |item|
+            %h1
+              - if item.url
+                %a{href: item.url}
+                  = item.name
+              - else
+                = item.name
+            - if item.items
+              %ul
+                - item.items.each do |subitem|
+                  %li
+                    %a{href: subitem.url}= subitem.name
       %main.main
         = yield
       %footer.footer

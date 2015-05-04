@@ -1,0 +1,17 @@
+mapa_de_transporte:
+  tag: mapa-de-transporte
+  name: "Mapa de Transporte"
+  sidebar: "Mapa de Transporte"
+  image: "/projects/mapa-de-transporte/screenshot.png"
+
+  factsheet:
+    "Potato": "Salad"
+    "Them": "Us"
+    "I have a potato": "I'm gonna take your potato"
+    "Please don't take my potato": "Too late"
+    "Nooo": "Yumm yumm yumm om nom nom nom"
+
+  description_title: A little about the project
+  description:
+    Hi, this is mah project
+    I like mah project

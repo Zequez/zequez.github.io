@@ -22,7 +22,7 @@
       <td>The gratitude of the people</td>
     </tr>
     <tr>
-      <td>Date:</td>
+      <td>Release Date:</td>
       <td>2012ish</td>
     </tr>
     <tr>
