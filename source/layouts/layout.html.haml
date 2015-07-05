@@ -5,7 +5,10 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %title
       Zequez -
-      = current_page.data.title
+      - content_for :title, current_page.data.title || ''
+      = yield_content :title
+      
+    / = current_page.data.title || (defined?(project) && project.name)
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     = stylesheet_link_tag "all"
   %body{class: page_classes}
@@ -13,23 +16,37 @@
       %header.header
         %h1.author
           %a{href: '/'} Zequez
-        %p.slogan A simple place to write about the stuff I make, do, and think
+        %p.slogan Just a place to write about the stuff I make, do, think, and maybe eat
       %nav.sidebar#sidebar
         .sidebar-overlay#sidebar-overlay
         .sidebar-button#sidebar-button
         %section.sidebar-section
-          - data.sidebar.items.each do |item|
-            %h1
-              - if item.url
-                %a{href: item.url}
-                  = item.name
-              - else
-                = item.name
-            - if item.items
-              %ul
-                - item.items.each do |subitem|
-                  %li
-                    %a{href: subitem.url}= subitem.name
+          %h1
+            %a{href: '/projects'} Projects
+          %ul
+            - data.projects.each_pair do |key, project|
+              %li
+                %a{href: "/projects/#{project.tag}"}= project.name
+          %h1
+            %a{href: '/'} Latest posts
+          %ul
+            - blog.articles[0..7].each do |article|
+              %li
+                %a{href: article.url}= article.title
+          %h1
+            %a{href: '/about-me'} About me / Contact
+          / - data.sidebar.items.each do |item|
+          /   %h1
+          /     - if item.url
+          /       %a{href: item.url}
+          /         = item.name
+          /     - else
+          /       = item.name
+          /   - if item.items
+          /     %ul
+          /       - item.items.each do |subitem|
+          /         %li
+          /           %a{href: subitem.url}= subitem.name
       %main.main
         = yield
       %footer.footer

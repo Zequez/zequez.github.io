@@ -1,10 +1,8 @@
 ---
-title: Example Articlee
+title: Super Post Title
 date: 2012-01-01
-tags: example
+tags: example, mapa-de-transporte
 ---
-
-# Super Post Title
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor pretium consequat. Vivamus id molestie est. Donec ut mi ac ligula ullamcorper varius vitae eu ante. [Mauris ante mauris](http://reddit.com), bibendum id fermentum et, suscipit vitae velit. Praesent id neque diam. Quisque in commodo dui. Ut vehicula feugiat tellus eget commodo. Maecenas volutpat gravida elementum. Duis neque enim, molestie nec lobortis vitae, suscipit nec purus. Pellentesque sodales odio ut tincidunt malesuada. Curabitur sapien tellus, efficitur vel felis non, aliquam mollis ipsum. Praesent condimentum rutrum ex, a ullamcorper leo luctus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dapibus neque ac sagittis. Vivamus iaculis accumsan dui, sed porttitor libero tempor vel. Ut efficitur vestibulum enim.
 

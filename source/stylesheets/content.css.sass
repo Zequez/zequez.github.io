@@ -10,21 +10,52 @@
       white-space: nowrap
     td:last-child
       color: $color-gray
+
+
       
 .main
   h1
     +adjust-font-size-to(2rem, 3)
   h2
     +adjust-font-size-to(1.5rem, 2)
+  h1,h2,h3,li
+    small
+      color: $color-gray
+      font-size: 0.9em
+
+  img
+    box-shadow: 0 1px 4px rgba(#000, 0.15), 0 3px 20px rgba(#000, 0.05)
 
   .img-wide
     max-width: 120%
     margin-top: rhythm(1)
     margin-bottom: rhythm(1)
     margin-left: -10%
-    box-shadow: 0 1px 4px rgba(#000, 0.15), 0 3px 20px rgba(#000, 0.05)
+
+  .img-right, .img-top-right
+    float: right
+    margin: rhythm(1)
+      right: 0
+
+  .img-top-right
+    margin-top: 0
+
+  .profile-pic
+    width: 25%
 
   p
     margin-bottom: rhythm(1)
     &:last-child
       margin-bottom: 0
+
+  em
+    font-style: italic
+  strong
+    font-weight: bold
+
+.about-me, article
+  .main
+    ul
+      padding-left: rhythm(1)
+      li:before
+        content: '» '

@@ -1,9 +1,9 @@
 items:
   -
-    name: Software Projects
+    name: Projects
     items:
       -
-        name: Factorio Mods (database/manager)
+        name: FactorioMods
         url: /projects/factorio-mods
       -
         name: Prismata Reddit Extension
@@ -15,17 +15,8 @@ items:
         name: Mapa de Transporte
         url: /projects/mapa-de-transporte
   -
-    name: Hardware Projects
+    name: Latest posts
     items:
-      -
-        name: First half-decent Arduino thingy
-        url: /projects/first-half-decent-arduino-thingy
-      -
-        name: Porta Herramientas
-        url: /projects/porta-herramientas
-  -
-    name: List of all the posts
-    url: '#'
   -
     name: About me / Contact
     url: /about-me

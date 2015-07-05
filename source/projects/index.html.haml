@@ -1,0 +1,11 @@
+---
+title: 'Projects'
+---
+
+.projects-index
+  %h1 Projects
+  %ul.projects
+    - data.projects.each_pair do |key, project|
+      %li.project
+        = link_to project.name, "/projects/#{project.tag}"
+        %small - #{project.year}

@@ -1,0 +1,16 @@
+- date = Date.new(year, defined?(month) ? month : 1, defined?(day) ? day : 1)
+- title_date = if page_type == 'day'
+  - date.strftime('%A %e %B %Y')
+- elsif page_type == 'month'
+  - date.strftime('%B %Y')
+- else
+  - date.strftime('%Y')
+- content_for(:title, "Articles from #{title_date}")
+
+%h1
+  Articles from #{title_date}
+%ul.articles
+  - page_articles.each do |article|
+    %li
+      = link_to article.title, article
+      %small - #{article.date.strftime('%b %e')}

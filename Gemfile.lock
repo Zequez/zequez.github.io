@@ -8,6 +8,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    autoprefixer-rails (5.2.1)
+      execjs
+      json
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chunky_png (1.3.3)
@@ -60,6 +63,9 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-autoprefixer (2.5.0)
+      autoprefixer-rails (~> 5.2.0)
+      middleman-core (>= 3.3.3)
     middleman-blog (3.5.3)
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
@@ -134,6 +140,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.3.7)
+  middleman-autoprefixer
   middleman-blog (~> 3.5.3)
   middleman-livereload (~> 3.1.0)
   tzinfo-data

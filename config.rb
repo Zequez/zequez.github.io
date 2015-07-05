@@ -3,7 +3,6 @@
 ###
 
 # Time.zone = "UTC"
-
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
@@ -11,8 +10,8 @@ activate :blog do |blog|
   blog.permalink = "{year}/{month}/{day}/{title}"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
-  blog.taglink = "tag/{tag}"
-  # blog.layout = "layout"
+  # blog.taglink = "tag/{tag}"
+  blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   blog.year_link = "{year}"
@@ -61,6 +60,8 @@ data.projects.each_pair do |key, project|
   proxy "/projects/#{project.tag}", '/projects/template.html', locals: { project: project }
 end
 
+proxy '/about-me', '/about-me.html'
+
 # with_layout :project do
 #   page "/projects/*"
 # end
@@ -79,12 +80,12 @@ end
 # Reload the browser automatically whenever files change
 activate :livereload, no_swf: true, host: '127.0.0.1'#, port: 9292
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 10']
+end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
-#   def some_helper
-#     "Helping"
-#   end
-#
 
 set :css_dir, 'stylesheets'
 
