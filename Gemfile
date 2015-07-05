@@ -16,4 +16,7 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw]
 gem "middleman-blog", "~> 3.5.3"
 gem "builder", "~> 3.0"
 
+gem "redcarpet"
+
 gem "middleman-autoprefixer"
+gem "middleman-syntax"

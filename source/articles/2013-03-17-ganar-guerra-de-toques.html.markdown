@@ -11,14 +11,14 @@ lang: es
 
 Simplemente van a la página de toques en Facebook y ejecutan el siguiente script en un navegador web moderno:
 
-{% highlight javascript %}
+```javascript
 setInterval(function(){
   var pokes = document.querySelectorAll('.pokesDashboard .prs .uiIconText');
   for(var i = 0; i < pokes.length; ++i){
     pokes[i].click();
   }
 }, 1000);
-{% endhighlight %}
+```
 
 También pueden agregarlo a marcadores arrastrando el siguiente link a la barra de marcadores: 
 <a href="javascript:setInterval(function(){    var pokes = document.querySelectorAll('.pokesDashboard .prs .uiIconText');   for(var i = 0; i < pokes.length; ++i){      pokes[i].click();    }  }, 1000);">

@@ -10,7 +10,7 @@ Cuando fuimos a sus opciones de privacidad nos dimos cuenta que tenía 120 aplic
 
 Por ello es que escribí un script que te permite desautorizar muchas apps de Facebook de manera automarizada, lo dejás corriendo en la página para eliminar aplicaciones y te vas a hacer otra cosa en otra pestaña...
 
-{% highlight javascript %}
+```javascript
 javascript: function eventFire(el,etype){if(el.fireEvent){el.fireEvent('on'+etype);}else{var evObj=document.createEvent('Events');evObj.initEvent(etype,true,false);el.dispatchEvent(evObj);}}
 var remove=[];var i=0;removeNext();function removeNext(){if(typeof(remove[i])=="object"){eval(remove[i].href);++i;setTimeout(function(){confirmRemove();},300);}
 else{remove=document.getElementsByClassName('fbSettingsListItemDelete');i=0;setTimeout(removeNext,100);}}
@@ -18,7 +18,7 @@ function confirmRemove(){var remove=document.getElementsByName('remove');if(type
 else{setTimeout(confirmRemove,100);}}
 function acceptRemove(){var ok=document.getElementsByName('ok');if(typeof(ok[0])=="object"){eventFire(ok[0],"click");removeNext();}
 else{setTimeout(acceptRemove,100);}}
-{% endhighlight %}
+```
 
 Simplemente entran a <a href="http://www.facebook.com/settings/?tab=applications">http://www.facebook.com/settings/?tab=applications</a> y pegan el script en la barra de direcciones de navegador. Van a empezar a aparecer cartelitos y a aceptarse automáticamente, debido a que Facebook no te permite eliminar otra aplicación hasta que no terminaste de eliminar la otra, tarda aproximadamente ~800ms por app, así que hacé los cálculos para la cantidad de apps que tengas xD.
 

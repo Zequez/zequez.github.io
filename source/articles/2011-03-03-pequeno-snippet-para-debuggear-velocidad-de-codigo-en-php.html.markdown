@@ -6,7 +6,7 @@ lang: es
 ---
 Si sos como yo, que -todavía- no usa xDebug en PHP pero querés saber por qué tu script anda lento, y escribir microtime() cada 5 líneas te tiene harto, entonces usá esta pequeñísima función que lo único que tenés que hacer es llamarla con un nombre y listo.
 
-{% highlight php %}
+```php
 <?php
 function lap($name = false) {
 	static $last = 0;
@@ -17,11 +17,11 @@ function lap($name = false) {
 	$last = $now;
 }
 ?>
-{% endhighlight %}
+```
 
 El uso sería así:
 
-{% highlight php %}
+```php
 <?php
 lap();
 funcionQueTardaPoco();
@@ -29,16 +29,14 @@ lap('primer función');
 funcionQueTardaMucho();
 lap('segunda funcion');
 ?>
-{% endhighlight %}
+```
 
 Y el resultado sería algo así:
 
-{% highlight php %}
-<?php
+```
 Lap primer función 0.0090179443359375 seconds!
 Lap segunda función 1.4245828127234901 seconds!
-?>
-{% endhighlight %}
+```
 
 Me pareció útil así que la postié xD
 

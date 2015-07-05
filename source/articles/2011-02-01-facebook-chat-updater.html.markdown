@@ -12,9 +12,9 @@ Esto sucede porque Facebook actualiza la lista personas conectadas en el chat de
 
 Tras una tarde de ingeniería inversa en el debugger de Chrome logré descifrar de manera precaria como es que funciona el cliente de Facebook y di con la forma de actualizar la lista de amigos manualmente:
 
-{% highlight javascript %}
+```javascript
   Arbiter._instance._events["buddylist/initialized"][0]._forceUpdate();
-{% endhighlight %}
+```
 
 Si pegan el código en la barra de navegación con un "javascript:" detrás de este podrán ver como se actualiza la lista, y si tienen la consola abierta también verá como es que hace un llamado a la dirección "http://www.facebook.com/ajax/chat/buddy_list.php?__a=1" mediante AJAX.
 

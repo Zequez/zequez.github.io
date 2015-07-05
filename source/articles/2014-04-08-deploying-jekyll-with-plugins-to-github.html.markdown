@@ -27,9 +27,9 @@ On `/source` change your branch to `source`. And on `_site` just delete everythi
 
 Now go to your `_config.yml` on `source/` folder. And add:
 
-{% highlight yaml %}
+```yaml
   destination: ../_site
-{% endhighlight %}
+```
 
 Now when you compile your site, the results are going to be on the `MyJekyll/_site` folder. After you finish your editing just `cd` to that folder and commit it as normal.
 
