@@ -4,10 +4,12 @@
       = current_page.title
       %small - #{current_page.date.strftime('%e %b %Y')}
     = yield
-    .article-tags
-      %strong Tags:
-      - current_page.tags.each do |tag|
-        = link_to tag, "/tag/#{tag}"
-    - if (project = (data.projects.values.map(&:tag) & current_page.tags).first)
-      %h2
-        %a{href: "/projects/#{project}"} Go to project page &raquo;
+    - unless current_page.tags.empty?
+      .article-tags
+        %strong Tags:
+        - current_page.tags.each do |tag|
+          = link_to tag, "/tag/#{tag}"
+          
+      - if (project = (data.projects.values.map(&:tag) & current_page.tags).first)
+        %h2
+          %a{href: "/projects/#{project}"} Go to project page &raquo;
