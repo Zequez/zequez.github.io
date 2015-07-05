@@ -10,7 +10,7 @@ Bueno, qué pasó en todo este tiempo? Yo les voy a decir qué pasó.
 
 Casi un año. 1 año desperdiciado. No puedo creer que hace exáctamente 1 año entré en pánico y dejé la facu. Yep, así de idiota soy. Pero bueno, la vida continúa. Desde el año pasado que dejé la facu (bueno, fue menos de 1 cuatrimestre, cuenta siquiera como empezar?), pasaron muchas cosas...
 
-{% img center 2012/05/rails1.jpg %}
+![right-small](/uploads/2012/05/rails1.jpg)
 
 Aprendí <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>! Aprendí <a href="http://en.wikipedia.org/wiki/Ruby_on_Rails">Rails</a>! Aprendí <a href="http://en.wikipedia.org/wiki/Coffeescript">CoffeeScript</a>! Aprendí <a href="http://en.wikipedia.org/wiki/HAML">HAML</a>! Aprendí <a href="http://en.wikipedia.org/wiki/Sass">SASS</a>! Intenté aprender <a href="http://en.wikipedia.org/wiki/Japanese_language">japonés</a>!
 
@@ -24,7 +24,7 @@ En los últimos dos meses también estuve trabajando en una aplicación web para
 
 Que conste que yo hice una pequeña investigación de mercado previa a comenzar el proyecto, pero ellos anunciaron todo hace mas o menos 15 días, y yo me enteré esta semana. Bueno, ya les voy a hablar de esto en el próximo post, donde también voy a postear <em>mi</em> aplicación, aunque no creo que la publique, y hasta quizás la convierta en un proyecto open source.
 
-<img class="alignright" title="Foto de un gatito, para no asustar a la gente con un texto largo sin imágenes." src="http://i.imgur.com/0R2BX.jpg" alt="" width="270" height="360" />
+![right-medium](http://i.imgur.com/0R2BX.jpg "Foto de un gatito, para no asustar a la gente con un texto largo sin imágenes.")
 
 Bueno, también hace un mes mas o menos comencé un curso de panadería y facturería. Es relativamente intensivo, las clases son 3 veces por semana 5 horas por día. Ya sé, ya sé, no tengo idea de panadería, pero me gusta cocinar, y era gratuito, así que dije "Por qué no? Total no estoy haciendo nada". Está bueno porque nos enseñan la teoría bioquímica detrás de toda la manufactura, y también práctica, obvio. Llevo panes o facturas a casa todos los martes, jueves y viernes.
 

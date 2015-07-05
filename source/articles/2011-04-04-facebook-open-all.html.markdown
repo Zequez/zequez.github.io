@@ -5,7 +5,7 @@ tags: scripts, extensions, facebook, javascript
 lang: es
 ---
 
-{% img right /2011/04/Untitled-1.png title="Facebook open all" alt="LALALALA" %}
+![right-medium-top](/uploads/2011/04/Untitled-1.png "Facebook open all")
 
 ¿Cansado de tener que hacer clicks interminables en Facebook para abrir todas las notificaciones?
 
@@ -68,7 +68,7 @@ Facebook cambió algunos IDs en la página y la extensión se rompió, pero ya l
 
 Bueno, cansado de tener que hacer click en cada una de las notificaciones para abrirlas en pestañas separadas finalmente hice una extensión de Google Chrome que lo hace por mí.
 
-{% img center /2011/04/screenshot.png alt="Facebook open all" title="Hermoso, simplemente hermoso (?)" %}
+![right-medium](/uploads/2011/04/screenshot.png "Facebook open all. Hermoso, simplemente hermoso (?)")
 
 Simplemente <a href="http://dl.dropbox.com/u/3682061/Internet/ZequezBlog/FBOpenAll.user.js">descargan la extensión</a>, la instalan, recargan la pestañas de Facebook y listo, ya tienen el botón.
 

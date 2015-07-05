@@ -5,7 +5,7 @@ tags: misc
 lang: es
 ---
 
-{% img right-small /2011/05/tiempo-300x300.jpg title="Tiempo (?)" %}
+![right-small-top](/uploads/2011/05/tiempo-300x300.jpg "Tiempo (?)")
 
 El tiempo se te va volando cuando estás trabajando en algo, y este es el caso, actualmente estoy trabajando en dos proyectos y tengo un tercero que debo comenzar una vez termine los anteriores. Lamentablemente voy a tener que aflojar un poco al tiempo dedicado a los proyectos porque se acercan los parciales de la facultad.
 

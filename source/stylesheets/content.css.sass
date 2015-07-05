@@ -18,31 +18,61 @@
       margin-top: rhythm(1)
   h2
     +adjust-font-size-to(1.5rem, 2)
+
   h1,h2,h3,li
     small
       color: $color-gray
       font-size: 0.8em
       white-space: nowrap
 
+  table
+    margin-bottom: rhythm(1)
+
   img
     box-shadow: 0 1px 4px rgba(#000, 0.15), 0 3px 20px rgba(#000, 0.05)
-
-  .img-wide
-    max-width: 120%
-    margin-top: rhythm(1)
-    margin-bottom: rhythm(1)
-    margin-left: -10%
-
-  .img-right, .img-top-right
-    float: right
     margin: rhythm(1)
+
+  .img-wide, img[alt="wide"]
+    display: block
+    width: 120%
+    margin: 0
+      left: -10%
       right: 0
 
-  .img-top-right
+  .img-center, img[alt="center"]
+    display: block
+    margin-left: auto
+    margin-right: auto
+    max-width: 100%
+
+  .img-top, img[alt$="-top"]
     margin-top: 0
 
-  .profile-pic
+  .img-bottom, img[alt$="-bottom"]
+    margin-bottom: 0
+
+  .img-right-small, img[alt^="right-small"]
+    float: right
+    margin-right: 0
+    width: 33%
+
+  .img-right-medium, img[alt^="right-medium"]
+    float: right
+    margin-right: 0
+    width: 50%
+
+  .img-left-medium, img[alt^="left-medium"]
+    float: left
+    margin-left: 0
+    width: 50%
+
+  .img-left-small, img[alt^="left-small"]
+    float: left
+    margin-left: 0
     width: 25%
+
+  p
+
 
   p, pre
     margin-bottom: rhythm(1)

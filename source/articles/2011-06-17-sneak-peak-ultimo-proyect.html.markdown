@@ -7,7 +7,7 @@ lang: es
 
 Bueno, hace un par de semanas que vengo trabajando en un proyecto nuevo, no voy a decir qué es para no arruinar la sorpresa (?), igual se pueden hacer una idea de la screen que pongo a continuación, y además a algunas personas ya les he comentado..
 
-{% img center 2011/06/sneak-peak.png %}
+![wide](/uploads/2011/06/sneak-peak.png)
 
 Como pueden ver el panel de administración ya está casi terminado, la parte visible también está casi terminada, tengo que retocar algunas cosas nomás.
 

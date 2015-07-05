@@ -11,11 +11,11 @@ Por eso hice esta extensión que pone a todos tus contactos conectados juntos, e
 
 Sin la extensión:
 
-{% img center 2011/07/antes.png %}
+![center](/uploads/2011/07/antes.png)
 
 Con la extensión:
 
-{% img center 2011/07/despues1.png %}
+![center](/uploads/2011/07/despues1.png)
 
 Para descargar la extensión (que en realidad es un userscript para GreaseMonkey así que lo pueden usar en casi cualquier navegador web) <a title="Descargar Facebook Chat Orderer" href="http://dl.dropbox.com/u/3682061/Internet/ZequezBlog/FBChatOrderer.user.js">hacen click aquí</a>.
 

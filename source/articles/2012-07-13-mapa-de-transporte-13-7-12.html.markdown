@@ -7,7 +7,7 @@ lang: es
 
 Bueno, bueno, bueno. Tuve un par de semanas ocupadas (?) Hoy subí una nueva actualización a <a href="http://mapadetransporte.com.ar/mar-del-plata">Mapa de Transporte</a>, hay unas cuantas cosas que hice, y he aquí la lista, o changelog, como lo quieras llamas:
 
-{% img right /2012/07/preview-mapa-de-transporte-13-7-12.png title="Super interface gráfica"%}
+![right-medium](/uploads/2012/07/preview-mapa-de-transporte-13-7-12.png "Super interface gráfica")
 
 - Se pueden <strong>buscar las calles por nombre</strong>.
 - Se pueden <strong>compartir los links con las direcciones</strong>.

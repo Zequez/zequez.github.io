@@ -7,7 +7,7 @@ lang: es
 
 Bueno, si sos usuario de Fibertel te habrás dado cuenta que al intentar ingresar a la página de administración del router de Fibertel, no carga.
 
-{% img center /2012/08/Snap-2012-08-13-at-16.35.34.png %}
+![center](/uploads/2012/08/Snap-2012-08-13-at-16.35.34.png)
 
 Copiamos 192.168.0.1 y lo ponemos en nuestro navegador y no pasa nada, se queda cargando...
 
@@ -19,7 +19,7 @@ Sin embargo, si le hacemos un ping, responde...
 
 Yo lo segundo que intenté fue entrar por Telnet...
 
-{% img center 2012/08/Snap-2012-08-13-at-16.39.48.png %}
+![center](/uploads/2012/08/Snap-2012-08-13-at-16.39.48.png)
 
 Y tampoco funcionó.
 
@@ -27,13 +27,13 @@ Entonces se me ocurrió reiniciar al router a la configuración de fábrica. Per
 
 Luego tenés que mantener apretado el botón de reset durante 10 segundos, pero yo lo mantengo apretado durante 30 por si acaso, porque en realidad no tengo idea el tiempo exacto.
 
-{% img center 2012/08/IMG_3303.jpg %}
+![center](/uploads/2012/08/IMG_3303.jpg)
 
 Si no encuentran ningún botón de reset es porque en realidad es un agujero. Y si siguen sin encontrarlo miren la foto que le saqué la punta del escarbadientes. Y si siguen sin encontrarlo fíjense si tienen <a href="http://www.motorola.com/Video-Solutions/US-EN/Products-and-Services/Voice-and-Data-Consumer-Premise-Equipment/DOCSIS-Modems-Gateways-and-eMTAs/Wireless-Cable-Modem-Gateways/SBG901_US-EN">el mismo router the yo</a>. Si no es el mismo router sigan buscando, el botón está ahí. Y si siguen sin encontrarlo, chequeen que el artefacto en cuestión sea, de hecho, un router.
 
 Muy bien, ahora entramos de nuevo a 192.168.0.1, y epa, ¿qué pasó? Carga.
 
-{% img center 2012/08/Snap-2012-08-13-at-16.47.03.png %}
+![center](/uploads/2012/08/Snap-2012-08-13-at-16.47.03.png)
 
 Nota: No necesitás conectarlo por cable, se puede entrar desde la red wifi "Motorola", sin contraseña.
 
@@ -43,7 +43,7 @@ Primero lo primero, pueden entrar con el usuario `admin` o el usuario `root`, y 
 
 Bueno, ya están adentro, ahora hagan todo lo que tienen que hacer, cambien el nombre y password del WiFi, abran puertos, hagan lo que se les cante.
 
-{% img center 2012/08/Snap-2012-08-13-at-16.47.11.png %}
+![center](/uploads/2012/08/Snap-2012-08-13-at-16.47.11.png)
 
 Listo, terminaste? Seguro no? Bueno, ahora conectá el cable de televisión de nuevo. Esperá 30 segundos. Intentá cargar 192.168.0.1. Nope, nada, **otra vez bloqueado**.
 

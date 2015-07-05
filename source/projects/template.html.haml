@@ -17,7 +17,8 @@ layout: "layout"
         %td #{key}:
         %td= value
 
-%img{src: "/projects/#{project.tag}.png#img-wide", alt: "A screenshot of the web app", class: "img-wide"}
+%p
+  %img{src: "/projects/#{project.tag}.png#img-wide", alt: "A screenshot of the web app", class: "img-wide"}
 
 %h2= project.description_title
 = simple_format project.description

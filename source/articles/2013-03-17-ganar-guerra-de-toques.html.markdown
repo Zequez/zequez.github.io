@@ -5,7 +5,7 @@ tags: scripts, facebook, bookmarklet
 lang: es
 ---
 
-{% img right-small /2013/03/poke-war.jpg %}
+![right-small-top](/uploads/2013/03/poke-war.jpg)
 
 **Cansado** de que te toquen en Facebook? Sos incapaz de ignorar los toques, tienes que responderlos, pero ya estás desperdiciando demasiado tiempo y te rompe mucho las bolas? Fear not!
 

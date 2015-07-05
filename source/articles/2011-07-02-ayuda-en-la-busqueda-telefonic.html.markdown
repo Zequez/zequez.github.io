@@ -10,7 +10,7 @@ lang: es
 
 Si tenés internet con Telefónica/Speedy entonces habrás notado que cuando intentás entrar a una página que no existe, como por ejemplo <a rel="nofollow" href="http://tarniag.com/">http://tarniag.com/</a> porque tipean con anagramas, Telefónica "gentilmente" los va a redireccionar a una página que supuestamente los ayuda a encontrarla, obviamente con publicidad, y cambiándote complétamente la dirección en la barra de direcciones, así que si te habías equivocado en una puta letra tenés que escribir todo denuevo.
 
-{% img center 2011/07/11.jpg %}
+![wide](/uploads/2011/07/11.jpg)
 
 Bueno, esto sucede porque estamos usando el servidor DNS de Telefónica, pero como el Internet es genial, podemos usar el DNS que se nos cante, yo uso los de Google, porque me cae bien, que son 8.8.8.8 y 8.8.4.4
 
@@ -31,7 +31,7 @@ En Windows XP lo siguiente:
 
 Listo, ahora si vamos a <a rel="nofollow" href="http://tarniag.net/"></a> nos va a aparecer el error que nuestro navegador web tiene preparado para la situación, y no le dejamos un solo centavo más a nuestra codiciosa ISP:
 
-{% img center 2011/07/21.jpg %}
+![wide](/uploads/2011/07/21.jpg)
 
 Y podemos hacer click felizmente en la sugerencia de Google Chrome o nuestro navegador web.
 

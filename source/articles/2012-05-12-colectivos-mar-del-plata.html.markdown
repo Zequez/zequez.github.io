@@ -10,7 +10,7 @@ Esta aplicación es un <a href="http://blooming-stream-4501.herokuapp.com/">mapa
 
 Pero no es un simple mapa.
 
-{% img right 2012/05/square_logo.png %}
+![right-medium](/uploads/2012/05/square_logo.png)
 
 Haciendo click en el mapa te calcula las rutas más cercanas a los colectivos para saber qué colectivo tomarte. Y te muestra la cantidad de metros que vas a tener que caminar.
 

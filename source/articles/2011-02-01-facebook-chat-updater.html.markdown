@@ -4,7 +4,7 @@ date: 2011-02-01
 tags: javascript, scripts, extensions, facebook
 lang: es
 ---
-{% img right /2011/02/facebook-chat-new.jpg title="Facebook chat" %}
+[right-medium-top](/uploads/2011/02/facebook-chat-new.jpg "Facebook chat")
 
 ¿Cansados de querer hablarle a una persona por el chat de Facebook y que en el mismísimo momento en que le están por escribir se desconecta? Bueno, yo sí.
 

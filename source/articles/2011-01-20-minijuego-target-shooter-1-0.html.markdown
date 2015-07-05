@@ -20,7 +20,7 @@ Bueno, después de tremenda descripción debo agregar que las fases salen al aza
 Pueden <a title="Jugar Target Shooter sin Facebook" href="http://zequez.com.ar/sandbox/blindmice/?noface=true"> jugar Target Shooter en la URL original</a>, o pueden hacerlo <a title="Jugar Target Shooter en Facebook" href="http://apps.facebook.com/target_shooter/">en Facebook</a>, notese que si no juegan en Facebook no van a poder presumir sobre sus habilidades con el mouse frente a sus amigos, quedan advertidos.
 
 <a href="http://zequez.com.ar/sandbox/blindmice/?noface=true">
-  {% img center /2011/01/screenshot.png title="Target shooter" nolink %}
+  ![wide](/uploads/2011/01/screenshot.png "Target shooter")
 </a>
 
 Poniéndonos un poco más técnicos, quiero comentar que para el desarrollo del minijuego utilicé Canvas de HTML5 y JavaScript, obviamente. Debido a esto, el comportamiento en los distintos navegadores web es distinto:
