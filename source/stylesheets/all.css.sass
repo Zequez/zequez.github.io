@@ -71,6 +71,7 @@ a
 .sidebar
   text-align: right
   a
+    display: block
     text-decoration: none
   h1
     +adjust-font-size-to(1.3rem)
@@ -78,8 +79,15 @@ a
     a
       color: $color-black
 
-  li a
-    color: $color-gray
+  li
+    box-shadow: 0px 1px 0px rgba(#000, 0.05)
+    &:last-child
+      box-shadow: none
+    a
+      display: block
+      color: $color-gray
+      &:hover
+        color: $color-blue
 
   .spanish-warning
     color: red
