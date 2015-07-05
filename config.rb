@@ -1,15 +1,16 @@
+activate :directory_indexes
+
 ###
 # Blog settings
 ###
 
-# Time.zone = "UTC"
+# # Time.zone = "UTC"
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
   blog.permalink = "{year}/{month}/{day}/{title}"
   # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
   blog.taglink = "tag/{tag}"
   blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
@@ -26,51 +27,21 @@ activate :blog do |blog|
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
 
-  blog.sources = "articles/:title.html"
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
 end
 
 page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
+# proxy "/about-me", "/about-me.html"
+# ignore "/about-me.html"
 
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", layout: false
-#
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
+# # compass_config do |config|
+# #   config.output_style = :compact
+# # end
 
 data.projects.each_pair do |key, project|
   proxy "/projects/#{project.tag}", '/projects/template.html', locals: { project: project }
 end
-
-proxy '/about-me', '/about-me.html'
-
-# with_layout :project do
-#   page "/projects/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
 
 ###
 # Helpers
@@ -85,9 +56,6 @@ activate :livereload, no_swf: true, host: '127.0.0.1'#, port: 9292
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 10']
 end
-
-# Methods defined in the helpers block are available in templates
-# helpers do
 
 set :css_dir, 'stylesheets'
 
