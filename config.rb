@@ -10,7 +10,7 @@ activate :blog do |blog|
   blog.permalink = "{year}/{month}/{day}/{title}"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
-  # blog.taglink = "tag/{tag}"
+  blog.taglink = "tag/{tag}"
   blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
@@ -22,13 +22,15 @@ activate :blog do |blog|
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
 
-  # Enable pagination
-  # blog.paginate = true
+  blog.paginate = false
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
+
+  blog.sources = "articles/:title.html"
 end
 
 page "/feed.xml", layout: false
+page "/sitemap.xml", layout: false
 
 ###
 # Compass

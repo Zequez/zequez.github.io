@@ -27,7 +27,4 @@ layout: "layout"
   %h2 There are no blog posts about this project
 - else
   %h2 Blog posts about the project
-  - blog.tags[project.tag].each do |article|
-    %h3
-      = link_to article.title, article
-      %small - #{article.date.strftime('%e %b %Y')}
+  = partial 'articles_list', locals: { articles: blog.tags[project.tag], date_format: '%e %B %Y' }

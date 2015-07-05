@@ -1,0 +1,7 @@
+- date_format ||= '%B %e'
+%ul.articles
+  - articles.each do |article|
+    %li
+      = link_to article.title, article
+      - unless date_format.blank?
+        %small - #{article.date.strftime(date_format)}

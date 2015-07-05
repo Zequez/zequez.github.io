@@ -1,16 +1,9 @@
 - date = Date.new(year, defined?(month) ? month : 1, defined?(day) ? day : 1)
-- title_date = if page_type == 'day'
-  - date.strftime('%A %e %B %Y')
-- elsif page_type == 'month'
-  - date.strftime('%B %Y')
-- else
-  - date.strftime('%Y')
+- date_formats = {'day' => '%A %e %B %Y', 'month' => '%B %Y', 'year' => '%Y'}
+- article_date_formats = {'day' => '', 'month' => '%A %e', 'year' => '%B %e'}
+- title_date = date.strftime(date_formats[page_type])
+- p title_date
 - content_for(:title, "Articles from #{title_date}")
 
-%h1
-  Articles from #{title_date}
-%ul.articles
-  - page_articles.each do |article|
-    %li
-      = link_to article.title, article
-      %small - #{article.date.strftime('%b %e')}
+%h1 Articles from #{title_date}
+= partial 'articles_list', locals: { articles: page_articles, date_format: article_date_formats[page_type] }
