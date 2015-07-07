@@ -15,13 +15,15 @@ layout: "layout"
     - project.factsheet.each_pair do |key, value|
       %tr
         %td #{key}:
-        %td= value
+        %td
+          :markdown
+            #{value}
 
 %p
-  %img{src: "/projects/#{project.tag}.png#img-wide", alt: "A screenshot of the web app", class: "img-wide"}
+  %img.img-wide{src: "/projects/#{project.tag}.png", alt: "A screenshot of the web app"}
 
-%h2= project.description_title
-= simple_format project.description
+:markdown
+  #{project.description}
 
 
 - if blog.tags[project.tag].nil?

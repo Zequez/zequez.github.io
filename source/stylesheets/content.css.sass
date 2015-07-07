@@ -12,12 +12,16 @@
       color: $color-gray
 
 .main
+  h1, h2, h3
+    font-weight: bold
   h1
     +adjust-font-size-to(2rem, 2)
     &+p, &+ul
       margin-top: rhythm(1)
   h2
     +adjust-font-size-to(1.5rem, 2)
+  h3
+    +adjust-font-size-to(1.2rem, 1)
 
   h1,h2,h3,li
     small
@@ -84,10 +88,9 @@
     font-style: italic
   strong
     font-weight: bold
-
-.about-me, article
-  .main
-    ul
-      padding-left: rhythm(1)
-      li:before
-        content: '» '
+    
+  ul
+    padding-left: rhythm(1)
+    li:before
+      content: '» '
+      font-weight: bold

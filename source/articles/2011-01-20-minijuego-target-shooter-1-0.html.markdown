@@ -1,7 +1,7 @@
 ---
 title: Minijuego Target Shooter 1.0
 date: 2011-01-20
-tags: videogames, apps, javascript
+tags: videogames, apps, javascript, target-shooter
 lang: es
 ---
 Si, es el nombre más original del mundo.
