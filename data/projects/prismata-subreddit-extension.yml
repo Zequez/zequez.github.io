@@ -1,6 +1,7 @@
 tag: prismata-subreddit-extension
 name: Prismata Subreddit Extension
 year: late-2014
+updated: 2015-7-7
 
 factsheet:
   "Github": "[zequez/prismata-subreddit-extension](https://github.com/Zequez/prismata-subreddit-extension)"
@@ -11,7 +12,7 @@ factsheet:
   "Release Date": "Late 2014"
   "Current Enthusiasm": Not much
   
-description: >
+description: |
   ## An extension, you say?
   
   Yes, a Chrome extension to be precise. [This wasn't my first experience with Chrome
@@ -38,6 +39,20 @@ description: >
   flails system. Also, when you hover the card name, it displays the complete card information,
   taken from the official Wiki.
   
+  It also replaces IDs for match replays with links for the replays.
+  
   ## What were the results?
   
+  Well, the reception was pretty good, a lot of people liked it! And they even added a link to
+  the extension in the sidebar of the subreddit! Pretty cool!
+  
+  Sadly, I didn't update it after a while, and I kind of abandoned it, multiple people PM me
+  with things to update, and I just couldn't find the drive or the time, since after the summer
+  I started college again. Right now I'm on winter break, so I wanted to make the update
+  it deserved.
+  
   ## What does the future holds?
+  
+  Well, I plan on maintaining the extension for now, like adding new cards, fixing bugs, but I
+  don't have plans to add new features. Maybe after the game goes public and I actually
+  play with friends or something, I might be more motivated.
