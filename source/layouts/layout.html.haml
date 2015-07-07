@@ -7,7 +7,7 @@
       Zequez -
       - content_for :title, current_page.data.title || ''
       = yield_content :title
-      
+
     / = current_page.data.title || (defined?(project) && project.name)
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     = stylesheet_link_tag "all"
@@ -25,7 +25,7 @@
           %h1
             %a{href: '/projects'} Projects
           %ul.projects-list
-            - data.projects.each_pair do |key, project|
+            - data.projects_list.each do |project|
               %li
                 %a{href: "/projects/#{project.tag}"}
                   = project.name

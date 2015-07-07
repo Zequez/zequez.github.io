@@ -9,7 +9,6 @@
         %strong Tags:
         - current_page.tags.each do |tag|
           = link_to tag, "/tag/#{tag}"
-          
-      - if (project = (data.projects.values.map(&:tag) & current_page.tags).first)
+      - if (project = (data.projects_list.map(&:tag) & current_page.tags).first)
         %h2
           %a{href: "/projects/#{project}"} Go to project page &raquo;

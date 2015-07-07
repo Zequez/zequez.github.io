@@ -40,7 +40,9 @@ page "/sitemap.xml", layout: false
 # #   config.output_style = :compact
 # # end
 
-data.projects.each_pair do |key, project|
+data.store :projects_hash, Hash[data.projects.map{|k,v| [k.sub(/^\d+\-/, ''), v]}]
+data.store :projects_list, data.projects.values.reverse
+data.projects_list.each do |project|
   proxy "/projects/#{project.tag}", '/projects/template.html', locals: { project: project }
 end
 
