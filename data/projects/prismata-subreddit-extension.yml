@@ -5,10 +5,10 @@ year: late-2014
 factsheet:
   "Github": "[zequez/prismata-subreddit-extension](https://github.com/Zequez/prismata-subreddit-extension)"
   "Download": "[PSR on the Chrome Web Store](https://chrome.google.com/webstore/detail/prismata-subreddit-extens/kibofaneppnocghmpkmanakeojkakblp)"
-  "Time Invested": ""
+  "Time Invested": "40hs ([public work log](https://docs.google.com/spreadsheet/pub?key=0Ak-B1ZZv9xIldHl5VF80M3N5QnhIdzlkYXZzU2JYVFE&single=true&gid=23&output=html))"
   "Skills Set": "JavaScript/CoffeeScript, Jasmine for TDD"
   "Profits": "Reddit karma"
-  "Release date": "Late 2014"
+  "Release Date": "Late 2014"
   "Current Enthusiasm": Not much
   
 description: >
@@ -18,9 +18,26 @@ description: >
   extensions](http://localhost:4567/2011/04/04/facebook-open-all), but with this one
   was the first one a little polished.
   
-  ### Prismata? What is that?
+  ## Prismata? What is that?
   
   Well, [Prismata](http://prismata.net/) is an excelent online cards game without random elements, so it's all
   about startegy and player skills. It got funded on Kickstarter, and they say it's gonna
-  be free, but they haven't made a public version yet, although you can play the demo, which
+  be free, but they haven't made a public version yet, although [you can play the demo](http://play.prismata.net/), which
   is just the same as the real deal, but a single-player experience against the computer.
+  
+  ## Why an extension?
+  
+  The [Prismata Subreddit](https://www.reddit.com/r/Prismata/) is used as the main
+  community for the game, but the problem with the subreddit is that when you discuss
+  cards of the game, it's pretty hard to know which card the person is talking about
+  and let alone knowing the exact card attributes and effects!
+  
+  The extension solves this. It has the complete list of cards names, and while you
+  browse the subreddit it searches for mentions of the cards so it can add a little
+  icon next to it with the drawing of the card. These little icons are in the subreddit
+  flails system. Also, when you hover the card name, it displays the complete card information,
+  taken from the official Wiki.
+  
+  ## What were the results?
+  
+  ## What does the future holds?
