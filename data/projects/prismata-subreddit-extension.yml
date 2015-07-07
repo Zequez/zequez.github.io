@@ -1,0 +1,26 @@
+tag: prismata-subreddit-extension
+name: Prismata Subreddit Extension
+year: late-2014
+
+factsheet:
+  "Github": "[zequez/prismata-subreddit-extension](https://github.com/Zequez/prismata-subreddit-extension)"
+  "Download": "[PSR on the Chrome Web Store](https://chrome.google.com/webstore/detail/prismata-subreddit-extens/kibofaneppnocghmpkmanakeojkakblp)"
+  "Time Invested": ""
+  "Skills Set": "JavaScript/CoffeeScript, Jasmine for TDD"
+  "Profits": "Reddit karma"
+  "Release date": "Late 2014"
+  "Current Enthusiasm": Not much
+  
+description: >
+  ## An extension, you say?
+  
+  Yes, a Chrome extension to be precise. [This wasn't my first experience with Chrome
+  extensions](http://localhost:4567/2011/04/04/facebook-open-all), but with this one
+  was the first one a little polished.
+  
+  ### Prismata? What is that?
+  
+  Well, [Prismata](http://prismata.net/) is an excelent online cards game without random elements, so it's all
+  about startegy and player skills. It got funded on Kickstarter, and they say it's gonna
+  be free, but they haven't made a public version yet, although you can play the demo, which
+  is just the same as the real deal, but a single-player experience against the computer.

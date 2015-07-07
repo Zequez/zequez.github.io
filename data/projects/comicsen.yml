@@ -1,0 +1,68 @@
+tag: comicsen
+name: Comicsen
+year: late-2011
+
+factsheet:
+  "Website": "It was located at comicsen.com, but as of now I already pulled the plug"
+  "Time Invested": "I don't know"
+  "Skills set": "It was my first experience with built-in web framework, CodeIgniter, PHP and it was JavaScript-intensive on some backend tools"
+  "Profits": "I actually got a few dollars on Adsense over the years, literally like 20 dollars in the 3 years it was online"
+  "Current status": "Shutdown"
+  "Source Code": I lost it, but since I had it hosted I managed to recover it years later. I'll upload it to Github later.
+
+description: |
+  > \*Front page screenshot [courtesy of the Wayback Machine](https://web.archive.org/web/20130525231609/http://comicsen.com/)
+
+  ## What was this?
+  
+  The intention of Comicsen was to build a website to translate webcomics to different languages. I was mostly
+  translating from English to Spanish.
+  
+  ### Etymology
+  
+  - Comics = Comics
+  - En = In (in Spanish)
+  
+  So the idea was to do something like ComicsEn/Spanish ComicsEn/English, etc.
+  
+  ### The idea
+  
+  Well, at the time I read a lot of webcomics, during the golden age of Google Reader. And the problem
+  was that I couldn't share with my friends on Facebook because most of my friends couldn't understand
+  English very well. So I decided it would be a great idea to translate them so everyone could enjoy the
+  comics I enjoyed.
+  
+  ### Features
+  
+  The website featured a built-in JavaScript editor in the backend to translate the comics. It allowed you
+  to erase the text in the comics, and add your own text. The idea was to make it easy to translate the comics.
+  
+  ![wide](/uploads/2011/06/sneak-peak.png)
+  > A screenshot of the JavaScript editor
+  
+  It also had a blog-like listing of the comics, with special pages for each comic, with a bar of % of translated
+  comics and stats like % of non-translatable jokes. It also featured a voting system for the comics.
+  
+  One of the most interesting things about the website was that the scraping of the comics was done automatically
+  with a PHP script and a Cronjob. Building Comicsen I mastered the art of Regular Expressions, and I also got a liking
+  of scraping websites, which I also did in later projects.
+  
+  All of these things were made mostly from scratch, since I didn't know plugins for CodeIgniter were a thing.
+  
+  ### What happened?
+  
+  Like most of my projects, I lost interest after a while and abandoned it.
+  I think I translated around a few hundred comics. The visits peaked at around 1200
+  visits per month, on July 2012, and that was *way* after I had abandoned.
+  Thinking back, the project might have had potential, and I could have
+  probably made it grow if I had been more persistent. But I wasn't.
+  
+  This year I shut it down, since I canceled my hosting subscription, since I don't work with PHP anymore, and my blog
+  was moved to be statically hosted on Github now (it was on Wordpress).
+  
+  ### What do you see in the future?
+  
+  I'm not sure. As I said, thinking back, it could have worked great if I had been persistent
+  with the translations. But that train already left, so I'll probably just let it go,
+  I have tons of other ideas to work with right now. Besides I would have to do
+  it from scratch, since I there is *now way* I'm touching PHP again.

@@ -19,8 +19,11 @@ layout: "layout"
           :markdown
             #{value}
 
-%p
-  %img.img-wide{src: "/projects/#{project.tag}.png", alt: "A screenshot of the web app"}
+- if project.pic.nil?
+  %p
+    %img.img-wide{src: "/projects/#{project.tag}.png", alt: "A screenshot of the web app"}
+- elsif project.pic
+  Yes
 
 :markdown
   #{project.description}

@@ -1,16 +1,3 @@
-.project-facts
-  padding: +rhythm(1)
-  border-collapse: separate
-  background: $color-black
-  color: $color-white
-  tbody
-    td:first-child
-      padding-right: 20px
-      vertical-align: top
-      white-space: nowrap
-    td:last-child
-      color: $color-gray
-
 .main
   h1, h2, h3
     font-weight: bold
@@ -21,7 +8,7 @@
   h2
     +adjust-font-size-to(1.5rem, 2)
   h3
-    +adjust-font-size-to(1.2rem, 1)
+    +adjust-font-size-to(1.2rem, 2)
 
   h1,h2,h3,li
     small
@@ -38,9 +25,9 @@
 
   .img-wide, img[alt="wide"]
     display: block
-    width: 120%
+    width: 118%
     margin: 0
-      left: -10%
+      left: -9%
       right: 0
 
   .img-center, img[alt="center"]
@@ -75,7 +62,7 @@
     margin-left: 0
     width: 25%
 
-  p, pre, ul
+  p, pre, ul, blockquote
     margin-bottom: rhythm(1)
     &:last-child
       margin-bottom: 0
@@ -88,9 +75,38 @@
     font-style: italic
   strong
     font-weight: bold
-    
+
   ul
     padding-left: rhythm(1)
     li:before
       content: '» '
       font-weight: bold
+
+  blockquote
+    padding-left: rhythm(1)/2
+    background: rgba(#000, 0.02)
+    border-left: solid rhythm(1)/2 $color-gray
+    color: $color-gray
+
+.projects .main
+  h1
+    margin-bottom: rhythm(1)
+    +adjust-font-size-to(3rem)
+    text-align: center
+
+.project-facts
+  padding: +rhythm(1)
+  border-collapse: separate
+  background: $color-black
+  color: $color-white
+
+  h2
+    margin-bottom: rhythm(1)
+
+  tbody
+    td:first-child
+      padding-right: 20px
+      vertical-align: top
+      white-space: nowrap
+    td:last-child
+      color: $color-gray
