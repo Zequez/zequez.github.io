@@ -1,20 +1,29 @@
+$left-sidebar: true
+$omega-sidebar: if($left-sidebar, '', 'omega')
+$omega-other: if($left-sidebar, 'omega', '')
+
 .container
   +container(1100px)
   position: relative
-  left: - 1100px * 2/12 // Half of the sidebar
+  #{if($left-sidebar, left, right)}: - 1100px * 2/12
 
 .header
-  +span(8 of 12 omega)
-  +pre(4 of 12)
+  +span(8 of 12 $omega-other)
+  @if $left-sidebar
+    +pre(4 of 12)
+  @else
+    +post(4 of 12)
 
 .sidebar
-  +span(4 of 12)
+  +span(4 of 12 $omega-sidebar)
+  @if $left-sidebar
+    text-align: right
 
 .main
-  +span(8 of 12 omega)
+  +span(8 of 12 $omega-other)
 
 .footer
-  +span(8 of 12 omega)
+  +span(8 of 12 $omega-other)
 
 @media screen and (max-width: 1100px * 16/12)
   .container

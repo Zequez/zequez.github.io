@@ -24,7 +24,7 @@
         %section.sidebar-section
           %h1
             %a{href: '/projects'} Projects
-          %ul
+          %ul.projects-list
             - data.projects.each_pair do |key, project|
               %li
                 %a{href: "/projects/#{project.tag}"}
@@ -32,10 +32,12 @@
                   %small (#{project.year})
           %h1
             %a{href: '/'} Latest posts
-          %ul
+          %ul.latest-articles-list
             - blog.articles[0..5].each do |article|
               %li
-                %a{href: article.url}= article.title
+                %a{href: article.url}
+                  = article.title
+                  %small= article.date.strftime("%e %B %Y")
           %h1
             %a{href: '/about-me'} About me / Contact
           / - data.sidebar.items.each do |item|

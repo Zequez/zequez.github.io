@@ -59,7 +59,7 @@ a
   color: $color-blue
   &:hover
     color: $color-gray
-  
+
 
 .header
   padding: +rhythm(1) 0
@@ -75,13 +75,16 @@ a
     +adjust-font-size-to(1.3rem)
 
 .sidebar
-  text-align: right
+  // text-align: right
   a
     display: block
     text-decoration: none
     small
       font-size: 0.8em
       opacity: 0.8
+  .latest-articles-list
+    small
+      display: block
   h1
     +adjust-font-size-to(1.3rem)
     white-space: nowrap
@@ -96,7 +99,7 @@ a
     a
       display: block
       color: $color-gray
-      margin-bottom: rhythm(1)/2
+      // margin-bottom: rhythm(1)/2
       &:hover
         color: $color-blue
 
