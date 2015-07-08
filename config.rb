@@ -1,6 +1,3 @@
-activate :directory_indexes
-activate :syntax#, line_numbers: true
-
 ###
 # Blog settings
 ###
@@ -22,7 +19,7 @@ activate :blog do |blog|
   # blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
-  # blog.calendar_template = "calendar.html"
+  # blog.calendar_template = "/calendar.html"
 
   blog.paginate = false
   # blog.per_page = 10
@@ -31,14 +28,12 @@ activate :blog do |blog|
   blog.sources = "articles/{year}-{month}-{day}-{title}.html"
 end
 
+activate :directory_indexes
+
 page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
 ignore "/projects/template.html"
-ignore "/stylesheets/*"
 ignore "/calendar.html"
-page "/stylesheets/all.css"
-# proxy "/about-me", "/about-me.html"
-# ignore "/about-me.html"
 
 # # compass_config do |config|
 # #   config.output_style = :compact
@@ -47,7 +42,7 @@ page "/stylesheets/all.css"
 data.store :projects_hash, Hash[data.projects.map{|k,v| [k.sub(/^\d+\-/, ''), v]}]
 data.store :projects_list, data.projects.values.reverse
 data.projects_list.each do |project|
-  proxy "/projects/#{project.tag}", '/projects/template.html', locals: { project: project }
+  proxy "/projects/#{project.tag}.html", '/projects/template.html', locals: { project: project }
 end
 
 ###
@@ -63,6 +58,8 @@ activate :livereload, no_swf: true, host: '127.0.0.1'#, port: 9292
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 10']
 end
+
+activate :syntax#, line_numbers: true
 
 set :css_dir, 'stylesheets'
 

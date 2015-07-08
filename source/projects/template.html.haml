@@ -4,35 +4,36 @@ layout: "layout"
 
 - content_for(:title, project.name)
 
-%h1= project.name
+.project
+  %h1= project.name
 
-%table.project-facts
-  %thead
-    %tr
-      %th{:colspan => "2"}
-        %h2 Project Factsheet
-  %tbody
-    - project.factsheet.each_pair do |key, value|
+  %table.project-facts
+    %thead
       %tr
-        %td #{key}:
-        %td
-          :markdown
-            #{value}
+        %th{:colspan => "2"}
+          %h2 Project Factsheet
+    %tbody
+      - project.factsheet.each_pair do |key, value|
+        %tr
+          %td #{key}:
+          %td
+            :markdown
+              #{value}
 
-- if project.pic.nil?
-  %p
-    %img.img-wide{src: "/projects/#{project.tag}.png", alt: "A screenshot of the web app"}
-- elsif project.pic
-  Yes
+  - if project.pic.nil?
+    %p
+      %img.img-wide{src: "/projects/#{project.tag}.png", alt: "A screenshot of the web app"}
+  - elsif project.pic
+    Yes
 
-:markdown
-  #{project.description}
+  :markdown
+    #{project.description}
 
 
-- if blog.tags[project.tag]
-  %h2 Blog posts about the project
-  = partial 'articles_list', locals: { articles: blog.tags[project.tag], date_format: '%e %B %Y' }
+  - if blog.tags[project.tag]
+    %h2 Blog posts about the project
+    = partial 'articles_list', locals: { articles: blog.tags[project.tag], date_format: '%e %B %Y' }
 
-- if project.updated
-  %time.update-notice{datetime: project.updated.strftime('%Y-%m-%d')}
-    This page was last updated #{project.updated.strftime('%e %B %Y')}
+  - if project.updated
+    %time.update-notice{datetime: project.updated.strftime('%Y-%m-%d')}
+      This page was last updated #{project.updated.strftime('%e %B %Y')}
