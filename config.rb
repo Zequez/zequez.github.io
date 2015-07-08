@@ -10,15 +10,15 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
-  blog.permalink = "{year}/{month}/{day}/{title}"
+  blog.permalink = ":year/:month/:day/:title"
   # Matcher for blog source files
   blog.taglink = "tag/{tag}"
   blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
-  blog.year_link = "{year}"
-  blog.month_link = "{year}/{month}"
-  blog.day_link = "{year}/{month}/{day}"
+  blog.year_link = ":year"
+  blog.month_link = ":year/:month"
+  blog.day_link = ":year/:month/:day"
   # blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"
@@ -33,6 +33,10 @@ end
 
 page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
+ignore "/projects/template.html"
+ignore "/stylesheets/*"
+ignore "/calendar.html"
+page "/stylesheets/all.css"
 # proxy "/about-me", "/about-me.html"
 # ignore "/about-me.html"
 
