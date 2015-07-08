@@ -33,7 +33,7 @@
           %h1
             %a{href: '/'} Latest posts
           %ul.latest-articles-list
-            - blog.articles[0..5].each do |article|
+            - blog.articles[0...5].each do |article|
               %li
                 %a{href: article.url}
                   = article.title

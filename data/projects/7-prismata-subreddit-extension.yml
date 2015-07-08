@@ -6,12 +6,12 @@ updated: 2015-7-7
 factsheet:
   "Github": "[zequez/prismata-subreddit-extension](https://github.com/Zequez/prismata-subreddit-extension)"
   "Download": "[PSR on the Chrome Web Store](https://chrome.google.com/webstore/detail/prismata-subreddit-extens/kibofaneppnocghmpkmanakeojkakblp)"
-  "Time Invested": "40hs ([public work log](https://docs.google.com/spreadsheet/pub?key=0Ak-B1ZZv9xIldHl5VF80M3N5QnhIdzlkYXZzU2JYVFE&single=true&gid=23&output=html))"
+  "Time Invested": "40hs ([public work log](https://docs.google.com/spreadsheets/d/1P6KkLv2ZW3LvDwTFNAwkkbrNakrsZ_vSTRQfTdC1G30/edit#gid=2007694699))"
   "Skills Set": "JavaScript/CoffeeScript, Jasmine for TDD"
   "Profits": "Reddit karma"
   "Release Date": "Late 2014"
   "Current Enthusiasm": Not much
-  
+
 description: |
   ## An extension, you say?
   

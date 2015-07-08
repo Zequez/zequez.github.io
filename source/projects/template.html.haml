@@ -29,8 +29,10 @@ layout: "layout"
   #{project.description}
 
 
-- if blog.tags[project.tag].nil?
-  %h2 There are no blog posts about this project
-- else
+- if blog.tags[project.tag]
   %h2 Blog posts about the project
   = partial 'articles_list', locals: { articles: blog.tags[project.tag], date_format: '%e %B %Y' }
+
+- if project.updated
+  %time.update-notice{datetime: project.updated.strftime('%Y-%m-%d')}
+    This page was last updated #{project.updated.strftime('%e %B %Y')}
