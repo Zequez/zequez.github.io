@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>
+Zequez -
+Playtime For The Buck
+</title>
+<!-- = current_page.data.title || (defined?(project) && project.name) -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+<link href='/favicon.png' rel='icon' type='image/x-icon'>
+</head>
+<body class='projects projects_playtime-for-the-buck projects_playtime-for-the-buck_index'>
+<div class='container'>
+<header class='header'>
+<h1 class='author'>
+<a href='/'>Zequez</a>
+</h1>
+<p class='slogan'>Just a place to write about the stuff I make, do, think, and maybe eat</p>
+</header>
+<nav class='sidebar' id='sidebar'>
+<div class='sidebar-overlay' id='sidebar-overlay'></div>
+<div class='sidebar-button' id='sidebar-button'></div>
+<section class='sidebar-section'>
+<h1>
+<a href='/projects'>Projects</a>
+</h1>
+<ul class='projects-list'>
+<li>
+<a href='/projects/zequez-blog'>
+Zequez blog (this website)
+<small>(mid-2015)</small>
+</a>
+</li>
+<li>
+<a href='/projects/prismata-subreddit-extension'>
+Prismata Subreddit Extension
+<small>(late-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/playtime-for-the-buck'>
+Playtime For The Buck
+<small>(mid-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/mapa-de-transporte'>
+Mapa de Transporte
+<small>(mid-2012)</small>
+</a>
+</li>
+<li>
+<a href='/projects/comicsen'>
+Comicsen
+<small>(late-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/target-shooter'>
+Target Shooter
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/series-follower'>
+Series Follower
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/qembole'>
+Qembole!
+<small>(2009-2010)</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/'>Latest posts</a>
+</h1>
+<ul class='latest-articles-list'>
+<li>
+<a href='/2014/06/07/tired-of-cmd-c-not-stopping-the-process/'>
+Tired of Cmd+C not stopping the process?
+<small> 7 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/06/01/beware-inner-html-ie/'>
+Beware of using innerHTML to remove all elements from a parent if you intend to reuse the elements later
+<small> 1 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/08/deploying-jekyll-with-plugins-to-github/'>
+Deploying Jekyll with plugins to Github pages: the easy way
+<small> 8 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/05/autoplay-not-working-on-one-device/'>
+Autoplay not working on one device on Windows
+<small> 5 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/03/30/hello-world/'>
+Hellow world! Now in anglo!
+<small>30 March 2014</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/about-me'>About me / Contact</a>
+</h1>
+<!-- - data.sidebar.items.each do |item| -->
+<!-- %h1 -->
+<!-- - if item.url -->
+<!-- %a{href: item.url} -->
+<!-- = item.name -->
+<!-- - else -->
+<!-- = item.name -->
+<!-- - if item.items -->
+<!-- %ul -->
+<!-- - item.items.each do |subitem| -->
+<!-- %li -->
+<!-- %a{href: subitem.url}= subitem.name -->
+</section>
+</nav>
+<main class='main'>
+<div class='project'>
+<h1>Playtime For The Buck</h1>
+<table class='project-facts'>
+<thead>
+<tr>
+<th colspan='2'>
+<h2>Project Factsheet</h2>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website:</td>
+<td>
+<p><a href="http://playtimeforthebuck.com">http://playtimeforthebuck.com</a></p>
+
+</td>
+</tr>
+<tr>
+<td>Github:</td>
+<td>
+<p><a href="https://github.com/PlaytimeForTheBuck/">Github/PlaytimeForTheBuck</a></p>
+
+</td>
+</tr>
+<tr>
+<td>Time Invested:</td>
+<td>
+<p>102hs (<a href="https://docs.google.com/spreadsheets/d/1P6KkLv2ZW3LvDwTFNAwkkbrNakrsZ_vSTRQfTdC1G30/edit?usp=sharing">public work log</a>)</p>
+
+</td>
+</tr>
+<tr>
+<td>Skills Set:</td>
+<td>
+<p>Ruby with Rspec for the scraper, JavaScript/CoffeeScript for the front end</p>
+
+</td>
+</tr>
+<tr>
+<td>Profits:</td>
+<td>
+<p>A guy donated like 3 dollars in Bitcoins, cool guy</p>
+
+</td>
+</tr>
+<tr>
+<td>Release Date:</td>
+<td>
+<p>Late 2014</p>
+
+</td>
+</tr>
+<tr>
+<td>Current Enthusiasm:</td>
+<td>
+<p>Pretty high, I&#39;m working on the next step</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<img alt='A screenshot of the web app' class='img-wide' src='/projects/playtime-for-the-buck.png'>
+</p>
+<h2>That looks awesome! What is it though?</h2>
+
+<p>I know, I know, the best thing since sliced bread, right? Well, initially
+when Steam started the reviews system, I saw that they included the playing time of the person for each
+review. So I though, <em>&quot;wouldn&#39;t it be nice to see the average playing time for every game?&quot;</em>
+and if you divide it by the price of the game, you can see... the <em>playtime for the buck</em>.</p>
+
+<p>The idea was to scrap all the games and  all the reviews and make a database with them, then I could
+analyze the data and sort it however I wanted! I ended up adding much more than playtime/buck, you can
+filter and sort games in multiple ways. Want to check the
+<a href="http://playtimeforthebuck.com/best-reviews/#tags=rpg&amp;sale=0~">best rated RPG games, with more than 50 reviews, that cost less than 5 dollars, and are on sale</a>, done.</p>
+
+<p>I&#39;m a data-fan so when I look at that big-ass table with
+unlimited filters and sorting mechanisms, the sheer density and the ease of accessibility of the data
+makes me puke rainbows.</p>
+
+<h2>How was it done?</h2>
+
+<p>This is my favorite part, the whole system runs as a static page. I feel guilty for
+abusing the Github pages, but hey, I&#39;m not putting any ads, and I&#39;m not targeting profits yet,
+so I guess it&#39;s OK.</p>
+
+<h3>The scraper</h3>
+
+<p>The scrapping it&#39;s done with a Ruby gem, <a href="https://github.com/PlaytimeForTheBuck/ptb-scrapper">PTB-Scrapper</a>,
+it would be unfair to call it a script. And yes, I do realize I misspelled scraper, and added an extra <em>p</em>, but
+when it was too late when the first guy pointed it out.</p>
+
+<p>The the scraped data is stored on a SQLite database, and then it&#39;s converted to a single <em>json</em> file for
+the front end to use.</p>
+
+<p>The actual Ruby gem creates a few rake tasks to facilitate the scraping of all the things. I don&#39;t want to
+go into too much detail, but the source it&#39;s there.</p>
+
+<h3>The front end</h3>
+
+<p>OK I kind of messed up with this one? Why, you might ask? Well multiple reasons.</p>
+
+<ul>
+<li>Error 1: I decided to use Jekyll to build it</li>
+<li>Error 2: I decided to not use any front end framework</li>
+<li>Error 3: I didn&#39;t write any tests</li>
+</ul>
+
+<p>So the whole front end infrastructure it&#39;s hanging from a thread, that&#39;s why
+I want to rewrite it and make it more solid. At least I separated everything with classes.</p>
+
+<p>It works like this. It loads a single page, and then it loads the <em>big-ass</em> JSON file from the
+server. And then it just works like a regular front end app. There are many quirks, like the handling
+of the URL, since I tried to make some pre-rendering for SEO purposes, which worked pretty well, I mean
+I&#39;m not sure if it helped the SEO, but the pre-rendering worked.</p>
+
+<h3>The builder</h3>
+
+<p>A third project? Yes, a third project.</p>
+
+<p>The builder takes care of the following:</p>
+
+<ul>
+<li>Includes the scraper and the front end as gems</li>
+<li>Runs the cronjobs to get the data and build the front end</li>
+<li>Pre-renders the front page, and other pages with pre-made searches with pretty URLs using PhantomJS</li>
+<li>Commits the generated page to the static page</li>
+<li>Pushes the static page to Github</li>
+</ul>
+
+<h2>What happened?</h2>
+
+<p>Well I didn&#39;t make a lot of publicity, I posted it in a few relevant subreddits, and it got a pretty good reception
+and I always comment with a link if I find someone asking for something that PlaytimeForTheBuck solves.</p>
+
+<p>I kind of let it go for a while, I just have a cronjob running in my personal computer that takes care of updating.
+Last week I realized that I was starting to get a pretty good amount of visits! On May it hit 1k! And June 1.6k!
+And then I realized it was mostly spam traffic from some russian sites, which was a bummer, but hey,
+the good Reddit reception was still there.</p>
+
+<h2>What are the plans?</h2>
+
+<p>I want to rewrite it with a legitimate back-end, probably Rails, and a solid front-end framework, which I&#39;m still
+undecided, I did have experience with Angular in my last job, but I don&#39;t really like it too much, and I need
+something really fast.</p>
+
+<p>I want to add features like data from different stores, system requirements for games,
+average value of steam cards, a top-list review system for SEO purposes and getting the name out there!</p>
+
+<h2>Blog posts about the project</h2>
+<ul class='articles'>
+<li class='lang-en'>
+<a href="/2014/06/01/beware-inner-html-ie/">Beware of using innerHTML to remove all elements from a parent if you intend to reuse the elements later</a>
+<small>-  1 June 2014</small>
+</li>
+</ul>
+
+<time class='update-notice' datetime='2015-07-07'>
+This page was last updated  7 July 2015
+</time>
+</div>
+
+</main>
+<footer class='footer'>
+<a href='/about-me'>
+Zequez
+</a>
+&copy; 2015
+</footer>
+</div>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+<!-- %aside -->
+<!-- %h2 Recent Articles -->
+<!-- %ol -->
+<!-- - blog.articles[0...10].each do |article| -->
+<!-- %li -->
+<!-- = link_to article.title, article -->
+<!-- %span= article.date.strftime('%b %e') -->
+<!-- %h2 Tags -->
+<!-- %ol -->
+<!-- - blog.tags.each do |tag, articles| -->
+<!-- %li= link_to "#{tag} (#{articles.size})", tag_path(tag) -->
+<!-- %h2 By Year -->
+<!-- %ol -->
+<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
+<!-- %li= link_to "#{year} (#{articles.size})", blog_year_path(year) -->
+</body>
+</html>

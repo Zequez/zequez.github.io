@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>
+Zequez -
+Prismata Subreddit Extension
+</title>
+<!-- = current_page.data.title || (defined?(project) && project.name) -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+<link href='/favicon.png' rel='icon' type='image/x-icon'>
+</head>
+<body class='projects projects_prismata-subreddit-extension projects_prismata-subreddit-extension_index'>
+<div class='container'>
+<header class='header'>
+<h1 class='author'>
+<a href='/'>Zequez</a>
+</h1>
+<p class='slogan'>Just a place to write about the stuff I make, do, think, and maybe eat</p>
+</header>
+<nav class='sidebar' id='sidebar'>
+<div class='sidebar-overlay' id='sidebar-overlay'></div>
+<div class='sidebar-button' id='sidebar-button'></div>
+<section class='sidebar-section'>
+<h1>
+<a href='/projects'>Projects</a>
+</h1>
+<ul class='projects-list'>
+<li>
+<a href='/projects/zequez-blog'>
+Zequez blog (this website)
+<small>(mid-2015)</small>
+</a>
+</li>
+<li>
+<a href='/projects/prismata-subreddit-extension'>
+Prismata Subreddit Extension
+<small>(late-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/playtime-for-the-buck'>
+Playtime For The Buck
+<small>(mid-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/mapa-de-transporte'>
+Mapa de Transporte
+<small>(mid-2012)</small>
+</a>
+</li>
+<li>
+<a href='/projects/comicsen'>
+Comicsen
+<small>(late-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/target-shooter'>
+Target Shooter
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/series-follower'>
+Series Follower
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/qembole'>
+Qembole!
+<small>(2009-2010)</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/'>Latest posts</a>
+</h1>
+<ul class='latest-articles-list'>
+<li>
+<a href='/2014/06/07/tired-of-cmd-c-not-stopping-the-process/'>
+Tired of Cmd+C not stopping the process?
+<small> 7 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/06/01/beware-inner-html-ie/'>
+Beware of using innerHTML to remove all elements from a parent if you intend to reuse the elements later
+<small> 1 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/08/deploying-jekyll-with-plugins-to-github/'>
+Deploying Jekyll with plugins to Github pages: the easy way
+<small> 8 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/05/autoplay-not-working-on-one-device/'>
+Autoplay not working on one device on Windows
+<small> 5 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/03/30/hello-world/'>
+Hellow world! Now in anglo!
+<small>30 March 2014</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/about-me'>About me / Contact</a>
+</h1>
+<!-- - data.sidebar.items.each do |item| -->
+<!-- %h1 -->
+<!-- - if item.url -->
+<!-- %a{href: item.url} -->
+<!-- = item.name -->
+<!-- - else -->
+<!-- = item.name -->
+<!-- - if item.items -->
+<!-- %ul -->
+<!-- - item.items.each do |subitem| -->
+<!-- %li -->
+<!-- %a{href: subitem.url}= subitem.name -->
+</section>
+</nav>
+<main class='main'>
+<div class='project'>
+<h1>Prismata Subreddit Extension</h1>
+<table class='project-facts'>
+<thead>
+<tr>
+<th colspan='2'>
+<h2>Project Factsheet</h2>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Github:</td>
+<td>
+<p><a href="https://github.com/Zequez/prismata-subreddit-extension">zequez/prismata-subreddit-extension</a></p>
+
+</td>
+</tr>
+<tr>
+<td>Download:</td>
+<td>
+<p><a href="https://chrome.google.com/webstore/detail/prismata-subreddit-extens/kibofaneppnocghmpkmanakeojkakblp">PSR on the Chrome Web Store</a></p>
+
+</td>
+</tr>
+<tr>
+<td>Time Invested:</td>
+<td>
+<p>40hs (<a href="https://docs.google.com/spreadsheets/d/1P6KkLv2ZW3LvDwTFNAwkkbrNakrsZ_vSTRQfTdC1G30/edit#gid=2007694699">public work log</a>)</p>
+
+</td>
+</tr>
+<tr>
+<td>Skills Set:</td>
+<td>
+<p>JavaScript/CoffeeScript, Jasmine for TDD</p>
+
+</td>
+</tr>
+<tr>
+<td>Profits:</td>
+<td>
+<p>Reddit karma</p>
+
+</td>
+</tr>
+<tr>
+<td>Release Date:</td>
+<td>
+<p>Late 2014</p>
+
+</td>
+</tr>
+<tr>
+<td>Current Enthusiasm:</td>
+<td>
+<p>Not much</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<img alt='A screenshot of the web app' class='img-wide' src='/projects/prismata-subreddit-extension.png'>
+</p>
+<h2>An extension, you say?</h2>
+
+<p>Yes, a Chrome extension to be precise. <a href="http://localhost:4567/2011/04/04/facebook-open-all">This wasn&#39;t my first experience with Chrome
+extensions</a>, but with this one
+was the first one a little polished.</p>
+
+<h2>Prismata? What is that?</h2>
+
+<p>Well, <a href="http://prismata.net/">Prismata</a> is an excelent online cards game without random elements, so it&#39;s all
+about startegy and player skills. It got funded on Kickstarter, and they say it&#39;s gonna
+be free, but they haven&#39;t made a public version yet, although <a href="http://play.prismata.net/">you can play the demo</a>, which
+is just the same as the real deal, but a single-player experience against the computer.</p>
+
+<h2>Why an extension?</h2>
+
+<p>The <a href="https://www.reddit.com/r/Prismata/">Prismata Subreddit</a> is used as the main
+community for the game, but the problem with the subreddit is that when you discuss
+cards of the game, it&#39;s pretty hard to know which card the person is talking about
+and let alone knowing the exact card attributes and effects!</p>
+
+<p>The extension solves this. It has the complete list of cards names, and while you
+browse the subreddit it searches for mentions of the cards so it can add a little
+icon next to it with the drawing of the card. These little icons are in the subreddit
+flails system. Also, when you hover the card name, it displays the complete card information,
+taken from the official Wiki.</p>
+
+<p>It also replaces IDs for match replays with links for the replays.</p>
+
+<h2>What were the results?</h2>
+
+<p>Well, the reception was pretty good, a lot of people liked it! And they even added a link to
+the extension in the sidebar of the subreddit! Pretty cool!</p>
+
+<p>Sadly, I didn&#39;t update it after a while, and I kind of abandoned it, multiple people PM me
+with things to update, and I just couldn&#39;t find the drive or the time, since after the summer
+I started college again. Right now I&#39;m on winter break, so I wanted to make the update
+it deserved.</p>
+
+<h2>What does the future holds?</h2>
+
+<p>Well, I plan on maintaining the extension for now, like adding new cards, fixing bugs, but I
+don&#39;t have plans to add new features. Maybe after the game goes public and I actually
+play with friends or something, I might be more motivated.</p>
+
+<time class='update-notice' datetime='2015-07-07'>
+This page was last updated  7 July 2015
+</time>
+</div>
+
+</main>
+<footer class='footer'>
+<a href='/about-me'>
+Zequez
+</a>
+&copy; 2015
+</footer>
+</div>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+<!-- %aside -->
+<!-- %h2 Recent Articles -->
+<!-- %ol -->
+<!-- - blog.articles[0...10].each do |article| -->
+<!-- %li -->
+<!-- = link_to article.title, article -->
+<!-- %span= article.date.strftime('%b %e') -->
+<!-- %h2 Tags -->
+<!-- %ol -->
+<!-- - blog.tags.each do |tag, articles| -->
+<!-- %li= link_to "#{tag} (#{articles.size})", tag_path(tag) -->
+<!-- %h2 By Year -->
+<!-- %ol -->
+<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
+<!-- %li= link_to "#{year} (#{articles.size})", blog_year_path(year) -->
+</body>
+</html>

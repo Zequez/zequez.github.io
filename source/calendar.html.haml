@@ -1,8 +1,0 @@
-- date = Date.new(year, defined?(month) ? month : 1, defined?(day) ? day : 1)
-- date_formats = {'day' => '%A %e %B %Y', 'month' => '%B %Y', 'year' => '%Y'}
-- article_date_formats = {'day' => '', 'month' => '%A %e', 'year' => '%B %e'}
-- title_date = date.strftime(date_formats[page_type])
-- content_for(:title, "Articles from #{title_date}")
-
-%h1 Articles from #{title_date}
-= partial 'articles_list', locals: { articles: page_articles, date_format: article_date_formats[page_type] }

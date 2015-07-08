@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>
+Zequez -
+Tired of Cmd+C not stopping the process?
+</title>
+<!-- = current_page.data.title || (defined?(project) && project.name) -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+<link href='/favicon.png' rel='icon' type='image/x-icon'>
+</head>
+<body class='x2014 x2014_06 x2014_06_07 x2014_06_07_tired-of-cmd-c-not-stopping-the-process x2014_06_07_tired-of-cmd-c-not-stopping-the-process_index'>
+<div class='container'>
+<header class='header'>
+<h1 class='author'>
+<a href='/'>Zequez</a>
+</h1>
+<p class='slogan'>Just a place to write about the stuff I make, do, think, and maybe eat</p>
+</header>
+<nav class='sidebar' id='sidebar'>
+<div class='sidebar-overlay' id='sidebar-overlay'></div>
+<div class='sidebar-button' id='sidebar-button'></div>
+<section class='sidebar-section'>
+<h1>
+<a href='/projects'>Projects</a>
+</h1>
+<ul class='projects-list'>
+<li>
+<a href='/projects/zequez-blog'>
+Zequez blog (this website)
+<small>(mid-2015)</small>
+</a>
+</li>
+<li>
+<a href='/projects/prismata-subreddit-extension'>
+Prismata Subreddit Extension
+<small>(late-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/playtime-for-the-buck'>
+Playtime For The Buck
+<small>(mid-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/mapa-de-transporte'>
+Mapa de Transporte
+<small>(mid-2012)</small>
+</a>
+</li>
+<li>
+<a href='/projects/comicsen'>
+Comicsen
+<small>(late-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/target-shooter'>
+Target Shooter
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/series-follower'>
+Series Follower
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/qembole'>
+Qembole!
+<small>(2009-2010)</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/'>Latest posts</a>
+</h1>
+<ul class='latest-articles-list'>
+<li>
+<a href='/2014/06/07/tired-of-cmd-c-not-stopping-the-process/'>
+Tired of Cmd+C not stopping the process?
+<small> 7 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/06/01/beware-inner-html-ie/'>
+Beware of using innerHTML to remove all elements from a parent if you intend to reuse the elements later
+<small> 1 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/08/deploying-jekyll-with-plugins-to-github/'>
+Deploying Jekyll with plugins to Github pages: the easy way
+<small> 8 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/05/autoplay-not-working-on-one-device/'>
+Autoplay not working on one device on Windows
+<small> 5 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/03/30/hello-world/'>
+Hellow world! Now in anglo!
+<small>30 March 2014</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/about-me'>About me / Contact</a>
+</h1>
+<!-- - data.sidebar.items.each do |item| -->
+<!-- %h1 -->
+<!-- - if item.url -->
+<!-- %a{href: item.url} -->
+<!-- = item.name -->
+<!-- - else -->
+<!-- = item.name -->
+<!-- - if item.items -->
+<!-- %ul -->
+<!-- - item.items.each do |subitem| -->
+<!-- %li -->
+<!-- %a{href: subitem.url}= subitem.name -->
+</section>
+</nav>
+<main class='main'>
+<article>
+<h1>
+Tired of Cmd+C not stopping the process?
+<small>-  7 Jun 2014</small>
+</h1>
+<p>So, you are happily using a terminal program, and then you try to stop it with Cmd+C. And it ignores your command.</p>
+
+<p>Program&hellip; I COMMAND YOU. TO STOP! RIGHT. NOW.</p>
+<pre class="highlight shell"><code><span class="gp">&gt;$ </span>assprogram
+Super program loaded!
+^CTerminating program...
+
+<span class="c"># *...*</span>
+
+^C^C^C
+
+<span class="c"># "Sup man, still terminating..."</span>
+
+<span class="c"># *...*</span>
+
+^C^C^C^C^C^C^C^C
+
+<span class="c"># "Calm down man, I'm terminating, just wait..."</span>
+
+<span class="c"># *I DON'T HAVE TIME FOR THIS!!!*</span>
+<span class="c"># *AGGGGGGGGHHHHHHHHHHHHHHHHHHHHHHHHHHHH*</span>
+
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+
+<span class="c"># "Haha just kidding you can't stop me now!"</span>
+
+<span class="c"># *Oh yeah?*</span>
+
+<span class="c"># "Wait... what are you doing!?"</span>
+
+^Z
+Use <span class="s2">"fg"</span> to <span class="k">return </span>to assprogram.
+
+<span class="o">[</span>1]+  Stopped                 assprogram
+
+<span class="gp">&gt;$ </span>px aux | grep assprogram
+user   4179  0.0  0.4   5420  1772 pts/0    T    01:36   0:00 assprogram
+user   4184  0.0  0.2   4364   836 pts/0    S+   01:38   0:00 grep --color<span class="o">=</span>auto assprogram
+<span class="gp">&gt;$ </span><span class="nb">kill </span>4179
+
+<span class="c"># *DIEEEEEEEEEEEEEEEEEE*</span>
+</code></pre>
+
+<p>Touching story.</p>
+
+<p>Anyway, what if it were EASIER THAN THAT?</p>
+<pre class="highlight shell"><code>^Z
+Use <span class="s2">"fg"</span> to <span class="k">return </span>to assprogram.
+
+<span class="o">[</span>1]+  Stopped                 assprogram
+<span class="gp">$&gt; </span><span class="nb">jobs</span> -l
+<span class="o">[</span>1]+  4176 Stopped <span class="o">(</span>signal<span class="o">)</span>        assprogram
+<span class="nv">$&gt;</span><span class="nb">kill </span>4176
+</code></pre>
+
+<p>&ldquo;Wow that&rsquo;s really cool! I didn&rsquo;t know that you could do that!&rdquo;</p>
+
+<p>But wait! There is more! It can be EASIER!</p>
+
+<p>Open up your <code>~/.bashrc</code> and add the following on the end:</p>
+<pre class="highlight shell"><code><span class="nb">alias </span><span class="nv">zpid</span><span class="o">=</span><span class="s2">"echo </span><span class="se">\`</span><span class="s2">jobs -l | grep -oh -w '[0-9]</span><span class="se">\\</span><span class="s2">{2,</span><span class="se">\\</span><span class="s2">}'</span><span class="se">\`</span><span class="s2">"</span>
+<span class="nb">alias </span><span class="nv">killz</span><span class="o">=</span><span class="s2">"kill </span><span class="se">\`</span><span class="s2">zpid</span><span class="se">\`</span><span class="s2"> &amp;&amp; fg"</span>
+</code></pre>
+
+<p>There, now if a nasty program doesn&rsquo;t want to stop you can Cmd+Z, and then type <code>killz</code> and you murder it for good.</p>
+
+<p>Note: I tried to check that the number was surounded by spaces on the grep regular expression, but grep regular expresions are fucked up and don&rsquo;t like spaces. So the shitty alternative I though was to just check if the number has 2 or more digits. So if you have a process with a number of 2 or more digits this will break.</p>
+
+<div class='article-tags'>
+<strong>Tags:</strong>
+<a href="/tag/scripts">scripts</a>
+</div>
+</article>
+
+</main>
+<footer class='footer'>
+<a href='/about-me'>
+Zequez
+</a>
+&copy; 2015
+</footer>
+</div>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+<!-- %aside -->
+<!-- %h2 Recent Articles -->
+<!-- %ol -->
+<!-- - blog.articles[0...10].each do |article| -->
+<!-- %li -->
+<!-- = link_to article.title, article -->
+<!-- %span= article.date.strftime('%b %e') -->
+<!-- %h2 Tags -->
+<!-- %ol -->
+<!-- - blog.tags.each do |tag, articles| -->
+<!-- %li= link_to "#{tag} (#{articles.size})", tag_path(tag) -->
+<!-- %h2 By Year -->
+<!-- %ol -->
+<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
+<!-- %li= link_to "#{year} (#{articles.size})", blog_year_path(year) -->
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>
+Zequez -
+Función de tiempo faltante para una fecha en PHP
+</title>
+<!-- = current_page.data.title || (defined?(project) && project.name) -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+<link href='/favicon.png' rel='icon' type='image/x-icon'>
+</head>
+<body class='x2011 x2011_02 x2011_02_11 x2011_02_11_funcion-cuenta-regresiva-php x2011_02_11_funcion-cuenta-regresiva-php_index'>
+<div class='container'>
+<header class='header'>
+<h1 class='author'>
+<a href='/'>Zequez</a>
+</h1>
+<p class='slogan'>Just a place to write about the stuff I make, do, think, and maybe eat</p>
+</header>
+<nav class='sidebar' id='sidebar'>
+<div class='sidebar-overlay' id='sidebar-overlay'></div>
+<div class='sidebar-button' id='sidebar-button'></div>
+<section class='sidebar-section'>
+<h1>
+<a href='/projects'>Projects</a>
+</h1>
+<ul class='projects-list'>
+<li>
+<a href='/projects/zequez-blog'>
+Zequez blog (this website)
+<small>(mid-2015)</small>
+</a>
+</li>
+<li>
+<a href='/projects/prismata-subreddit-extension'>
+Prismata Subreddit Extension
+<small>(late-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/playtime-for-the-buck'>
+Playtime For The Buck
+<small>(mid-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/mapa-de-transporte'>
+Mapa de Transporte
+<small>(mid-2012)</small>
+</a>
+</li>
+<li>
+<a href='/projects/comicsen'>
+Comicsen
+<small>(late-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/target-shooter'>
+Target Shooter
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/series-follower'>
+Series Follower
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/qembole'>
+Qembole!
+<small>(2009-2010)</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/'>Latest posts</a>
+</h1>
+<ul class='latest-articles-list'>
+<li>
+<a href='/2014/06/07/tired-of-cmd-c-not-stopping-the-process/'>
+Tired of Cmd+C not stopping the process?
+<small> 7 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/06/01/beware-inner-html-ie/'>
+Beware of using innerHTML to remove all elements from a parent if you intend to reuse the elements later
+<small> 1 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/08/deploying-jekyll-with-plugins-to-github/'>
+Deploying Jekyll with plugins to Github pages: the easy way
+<small> 8 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/05/autoplay-not-working-on-one-device/'>
+Autoplay not working on one device on Windows
+<small> 5 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/03/30/hello-world/'>
+Hellow world! Now in anglo!
+<small>30 March 2014</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/about-me'>About me / Contact</a>
+</h1>
+<!-- - data.sidebar.items.each do |item| -->
+<!-- %h1 -->
+<!-- - if item.url -->
+<!-- %a{href: item.url} -->
+<!-- = item.name -->
+<!-- - else -->
+<!-- = item.name -->
+<!-- - if item.items -->
+<!-- %ul -->
+<!-- - item.items.each do |subitem| -->
+<!-- %li -->
+<!-- %a{href: subitem.url}= subitem.name -->
+</section>
+</nav>
+<main class='main'>
+<article>
+<h1>
+Función de tiempo faltante para una fecha en PHP
+<small>- 11 Feb 2011</small>
+</h1>
+<p>Mientras trabajaba en un proyecto di con el usual caso de necesitar una función que me permita mostrar el tiempo faltante para una fecha dada en años, meses, semanas, días, horas, minutos, segundos o una combinación entre estos&hellip;</p>
+
+<p>Me quedó tan linda que no pude evitar hacer un post en el blog con esta por si a alguien le sirve ^^</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="k">function</span> <span class="nf">dateTo</span><span class="p">(</span><span class="nv">$str</span><span class="p">,</span> <span class="nv">$t1</span><span class="p">,</span> <span class="nv">$t2</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Si nos dan un segundo parámetros calculamos el tiempo entre dos fechas
+</span>    <span class="nv">$t</span> <span class="o">=</span> <span class="nv">$t1</span><span class="o">-</span><span class="p">(</span><span class="nv">$t2</span><span class="o">?</span><span class="nv">$t2</span><span class="o">:</span><span class="nb">time</span><span class="p">());</span>
+
+    <span class="c1">// Un array con todos los reemplazos que vamos a usar
+</span>    <span class="nv">$p</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'{s}'</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span>
+        <span class="s1">'{i}'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span>
+        <span class="s1">'{h}'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="p">,</span>
+        <span class="s1">'{d}'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="p">,</span>
+        <span class="s1">'{w}'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">7</span><span class="p">,</span>
+        <span class="s1">'{m}'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">30</span><span class="p">,</span>
+        <span class="s1">'{y}'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">365</span>
+    <span class="p">);</span>
+
+    <span class="c1">// Obtenemos todos los tiempos que fueron proveídos en la string
+</span>    <span class="nb">preg_match_all</span><span class="p">(</span><span class="s2">"/\{[sihdwmy]\}/"</span><span class="p">,</span> <span class="nv">$str</span><span class="p">,</span> <span class="nv">$ma</span><span class="p">);</span>
+
+    <span class="c1">// Creamos un array ordenado del mayor al menor tiempo requerido
+</span>    <span class="nv">$found</span> <span class="o">=</span> <span class="nx">Array</span><span class="p">();</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$ma</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">as</span> <span class="o">&amp;</span><span class="nv">$m</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$found</span><span class="p">[</span><span class="nv">$m</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$p</span><span class="p">[</span><span class="nv">$m</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="nb">arsort</span><span class="p">(</span><span class="nv">$found</span><span class="p">);</span>
+
+    <span class="c1">// Reemplazamos la string con los tiempos
+</span>    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$found</span> <span class="k">as</span> <span class="nv">$i</span> <span class="o">=&gt;</span> <span class="o">&amp;</span><span class="nv">$fo</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$str</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="nv">$i</span><span class="p">,</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="p">(</span><span class="nv">$t</span><span class="o">/</span><span class="nv">$fo</span><span class="p">),</span> <span class="nv">$str</span><span class="p">);</span>
+        <span class="nv">$t</span> <span class="o">=</span> <span class="nv">$t</span> <span class="o">%</span> <span class="nv">$fo</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nv">$str</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+
+<p>Para usarla lo único que tienen que hacer es:</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Faltan </span><span class="si">{</span><span class="nv">y</span><span class="si">}</span><span class="s2"> años, </span><span class="si">{</span><span class="nv">m</span><span class="si">}</span><span class="s2"> meses, </span><span class="si">{</span><span class="nv">w</span><span class="si">}</span><span class="s2"> semanas, </span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, </span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, </span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos para llegue Marty McFly"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2015-10-21"</span><span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+
+<p>Lo cual devolvería algo como:</p>
+<pre class="highlight php"><code>#=&gt; Faltan 4 años, 8 meses, 3 semanas, 4 días, 3 horas, 18 minutos, 57 segundos para que llegue Marty McFly
+</code></pre>
+
+<p>También te permite escribir algo como:</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Faltan </span><span class="si">{</span><span class="nv">m</span><span class="si">}</span><span class="s2"> meses y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos para el 2012!"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2012-1-1"</span><span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+
+<p>Lo cual devolvería algo como:</p>
+<pre class="highlight php"><code>Faltan 10 meses y 1998806 segundos para el 2012!
+</code></pre>
+
+<p>Ya que detecta la el interval de tiempo más grande y saltea los demás para mostrar los intervalos del mayor al menor&hellip;</p>
+
+<p>Y también podés escribir la fecha negativa para calcular el tiempo que pasó desde un momento dado:</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Hace </span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, </span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, </span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos que fue mi cumpleaños!"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2010/12/14"</span><span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+
+<p>Lo cual devuelve:</p>
+<pre class="highlight php"><code>Hace -59 días, -20 horas, -54 minutos y -14 segundos que fue mi cumpleaños!
+</code></pre>
+
+<p>Ahh pero está negativo, no me sirve &not;&not;
+Bueno, para eso está el tercer parámetro! ^^</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Hace </span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, </span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, </span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos que fue mi cumpleaños!"</span><span class="p">,</span> <span class="nb">time</span><span class="p">(),</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2010/12/14"</span><span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+
+<p>Lo que te da este hermoso resultado</p>
+<pre class="highlight php"><code>Hace 59 días, 20 horas, 57 minutos y 17 segundos que fue mi cumpleaños!
+</code></pre>
+
+<p>Creo que con esos ejemplos ya queda bastante claro como va la función :P
+En un futuro tengo ganas de implementarle condicionales, para poder escribir algo como esto:</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="nx">dateTo</span><span class="p">(</span><span class="s2">"[Faltan [</span><span class="si">{</span><span class="nv">m</span><span class="si">}</span><span class="s2"> meses, ][</span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, ][</span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, ][</span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y ][</span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos para año nuevo!]]Feliz año nuevo!"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2012/1/1"</span><span class="p">));</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+
+<p>Y que elimine las partes entre corchetes si el tiempo dentro de estos es 0 o negativo, para así poder reciclar más fácil la misma string&hellip;</p>
+
+<p>Bueno, eso es todo, espero que a alguien le sirva, yo sigo con mi &ldquo;proyectito&rdquo; que ya lo interrumpí demasiado con esto jaja.</p>
+
+<p><strong>EDITO:</strong></p>
+
+<p>Acá hice una variación de la función para obtener el tiempo faltante en un array. El array es opcional, si no lo ponés devuelve el tiempo faltante de todos los tiempos (por así decirlo jaja).</p>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="k">function</span> <span class="nf">dateToArray</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span> <span class="nv">$t1</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">$t2</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$p</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'s'</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span>
+        <span class="s1">'i'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="p">,</span>
+        <span class="s1">'h'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="p">,</span>
+        <span class="s1">'d'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="p">,</span>
+        <span class="s1">'w'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">7</span><span class="p">,</span>
+        <span class="s1">'m'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">30</span><span class="p">,</span>
+        <span class="s1">'y'</span><span class="o">=&gt;</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">365</span>
+    <span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$arr</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nv">$t2</span> <span class="o">=</span> <span class="nv">$t1</span><span class="p">;</span>
+        <span class="nv">$t1</span> <span class="o">=</span> <span class="nv">$arr</span><span class="p">;</span>
+        <span class="nv">$r</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nv">$p</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$ar</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$r</span><span class="p">[</span><span class="nv">$ar</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$p</span><span class="p">[</span><span class="nv">$ar</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="nb">arsort</span><span class="p">(</span><span class="nv">$r</span><span class="p">);</span>
+
+    <span class="nv">$t</span> <span class="o">=</span> <span class="nv">$t1</span><span class="o">-</span><span class="p">(</span><span class="nv">$t2</span><span class="o">?</span><span class="nv">$t2</span><span class="o">:</span><span class="nb">time</span><span class="p">());</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$r</span> <span class="k">as</span> <span class="nv">$i</span> <span class="o">=&gt;</span> <span class="nv">$q</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$r</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span> <span class="p">(</span><span class="nv">$t</span><span class="o">/</span><span class="nv">$q</span><span class="p">);</span>
+        <span class="nv">$t</span> <span class="o">=</span> <span class="nv">$t</span> <span class="o">%</span> <span class="nv">$q</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nv">$r</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+
+<p>El funcionamiento es básicamente el mismo, solo que en el primer parámetro ponés un array en vez de una string, con las keys de los nombres de los tiempos, y, m, w, d, h, i, s.</p>
+
+<p>Si alguien tiene ganas puede combinar las 2 funciones en una sola :P.
+Yo no tengo. Y tampoco necesito hacerlo jaja.</p>
+
+<div class='article-tags'>
+<strong>Tags:</strong>
+<a href="/tag/scripts">scripts</a>
+<a href="/tag/php">php</a>
+</div>
+</article>
+
+</main>
+<footer class='footer'>
+<a href='/about-me'>
+Zequez
+</a>
+&copy; 2015
+</footer>
+</div>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+<!-- %aside -->
+<!-- %h2 Recent Articles -->
+<!-- %ol -->
+<!-- - blog.articles[0...10].each do |article| -->
+<!-- %li -->
+<!-- = link_to article.title, article -->
+<!-- %span= article.date.strftime('%b %e') -->
+<!-- %h2 Tags -->
+<!-- %ol -->
+<!-- - blog.tags.each do |tag, articles| -->
+<!-- %li= link_to "#{tag} (#{articles.size})", tag_path(tag) -->
+<!-- %h2 By Year -->
+<!-- %ol -->
+<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
+<!-- %li= link_to "#{year} (#{articles.size})", blog_year_path(year) -->
+</body>
+</html>
