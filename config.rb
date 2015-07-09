@@ -34,6 +34,8 @@ page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
 ignore "/projects/template.html"
 ignore "/calendar.html"
+page "/README", layout: false, directory_index: false
+
 
 # # compass_config do |config|
 # #   config.output_style = :compact
