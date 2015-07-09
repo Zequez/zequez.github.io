@@ -21,3 +21,6 @@
 .DS_Store
 
 /.git_backup
+
+*.sublime-project
+*.sublime-workspace
