@@ -1,0 +1,35 @@
+tag: factorio-mods
+name: FactorioMods.com
+year: mid-2015
+
+factsheet:
+  "Website": "[factoriomods.com](http://www.factoriomods.com)"
+  "Github": "[Zequez/FactorioMods](https://github.com/Zequez/FactorioMods)"
+  "Time Invested": "+350hs although with all the code I wrote and later deleted it could have taken me way less time haha"
+  "Tech/Skills Set": "Ruby and Rails mostly, you can see the source"
+  "Profits": "About -7US$ / month in Heroku fees"
+  "Release Date": "Mid 2015"
+  "Current Enthusiasm": "The project is frozen, as it was replaced with the official mods app (which I worked and was paid to build)"
+
+description: |
+  It's alright, you can take your time to amaze at the sheer beauty of the project.
+  Take a deep breath, and relax. I know, I know, I love it too!
+
+  But seriously, I really put a lot of effort on the design, and learned a few new things
+  in the process. I don't like to use CSS frameworks because I always end up touching it up
+  just to my liking, so everything is hand crafted with SASS.
+
+  [Factorio](http://factorio.com/) is an automation game where you land on a planet and have to
+  build automated stuff. I love it too, that's why I made the app.
+
+  The app currently still lives in [factoriomods.com](http://factoriomods.com) (yeah, I snatched
+  the domain really soon), but it's in the process to be decommissioned, as there is an official
+  mod database now, so I'll host it silently in a subdomain of this blog to be displayed here.
+
+  ## Reception
+
+  I think people liked it, I posted it on the forum and on the [Factorio subreddit](https://www.reddit.com/r/factorio/)
+  and people seemed to like it.
+
+  Afterwards I got in touch with the Factorio devs and they contracted me to make
+  an [official web app and API](http://mods.factorio.com) as they already had a plan to do it.
