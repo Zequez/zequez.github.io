@@ -10,7 +10,7 @@ About
 <!-- = current_page.data.title || (defined?(project) && project.name) -->
 <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
 <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
-<link href='/favicon.png' rel='icon' type='image/x-icon'>
+<link href='/favicon.ico?v=6' rel='icon' type='image/x-icon'>
 </head>
 <body class='about-me about-me_index'>
 <div class='container'>
@@ -25,9 +25,15 @@ About
 <div class='sidebar-button' id='sidebar-button'></div>
 <section class='sidebar-section'>
 <h1>
-<a href='/projects'>Projects</a>
+<a href='/projects'>Personal Projects</a>
 </h1>
 <ul class='projects-list'>
+<li>
+<a href='/projects/factorio-mods'>
+FactorioMods.com
+<small>(mid-2015)</small>
+</a>
+</li>
 <li>
 <a href='/projects/zequez-blog'>
 Zequez blog (this website)
@@ -115,63 +121,52 @@ Hellow world! Now in anglo!
 <h1>
 <a href='/about-me'>About me / Contact</a>
 </h1>
-<!-- - data.sidebar.items.each do |item| -->
-<!-- %h1 -->
-<!-- - if item.url -->
-<!-- %a{href: item.url} -->
-<!-- = item.name -->
-<!-- - else -->
-<!-- = item.name -->
-<!-- - if item.items -->
-<!-- %ul -->
-<!-- - item.items.each do |subitem| -->
-<!-- %li -->
-<!-- %a{href: subitem.url}= subitem.name -->
 </section>
 </nav>
 <main class='main'>
 <h2>About me</h2>
 <img alt='This is a picture of my face' class='img-right-small img-top' src='/images/profile.jpg' title='This is a picture of my face'>
-<p>Hey, my name is <strong>Ezequiel Adrian Schwartzman</strong>, I&#39;m an <em>electronics engineer student by day, and web developer by night</em>. Online I&#39;m refered to as <strong>Zequez</strong>, and some people also call me that in real life. I live in Mar del Plata, <strong>Argentina</strong>, and as cliché as it sounds, <em>I like to make stuff</em>.</p>
-<h2>Contact</h2>
-<p>If you wanna get in touch with me for whatever reason, you can try the following things:</p>
+<p>Hey, my name is <strong>Ezequiel Adrian Schwartzman</strong>, I&#39;m an <em>informatics engineer
+student by day, and web developer by night</em>. Online I&#39;m refered to as <strong>Zequez</strong>,
+and some people also call me that in real life. I live in Mar del Plata, <strong>Argentina</strong>,
+and as cliché as it sounds, <em>I really just like to make stuff</em>.</p>
 
+<p>My strongest skills are Rails and Front-end stuff (all JS/CSS/HTML), mostly working with React now.
+You can check the <a href="/projects">projects I made</a> to see the kind of stuff you can expect me to be able to do.</p>
+
+<p>As a person I strive for efficiency in my life, yet my greatest enemy is procrastination. My friends
+describe me as excitable, and my parents think I&#39;m smart (disappointingly, college taught me otherwise).
+I prefer my coffee black and my <em>mate</em> bitter, this way I don&#39;t need neither milk nor sugar.</p>
+
+<p>If you need something done, and I have the skills to do it, and you&#39;re willing to pay for it,
+at a price that I&#39;m willing to accept, then you might want to...</p>
+<h2>Get in touch with me</h2>
 <ul>
 <li><strong>Email</strong> me at <a href="mailto:zequez@gmail.com">zequez@gmail.com</a></li>
 <li><strong>Call</strong> me, <strong>text</strong> me or <strong>Whatsapp</strong> me to <a href="tel:+5492235235568">+54 9 223 5235568</a></li>
 <li><strong>PM</strong> me on <a href="http://reddit.com/u/Zequez">Reddit/u/Zequez</a></li>
-<li><strong>Face</strong> me on <a href="https://facebook.com/zequez">Facebook/Zequez</a></li>
+<li><strong>Friend</strong> me on <a href="https://facebook.com/zequez">Facebook/Zequez</a></li>
+<li><strong>Tweet</strong> me on <a href="http://twitter.com/zequez">Twitter/Zequez</a></li>
 <li><strong>Fork</strong> me on <a href="https://github.com/zequez">Github/Zequez</a></li>
 <li><strong>Network</strong> me on <a href="https://www.linkedin.com/pub/ezequiel-schwartzman/58/727/25b">LinkedIn</a></li>
 <li><strong>Skype</strong> me on Skype zequez0 (personal) or ezequielschw (work)</li>
-<li><strong>Visit</strong> me personally at my address which I&#39;m not putting here but you can totally visit me if you know it or if you&#39;re willing to find it or kindly ask me for it</li>
+<li><strong>Visit</strong> me personally at my address which I&#39;m not putting here but you can totally visit me if you know it, or if you&#39;re willing to find it, or you just kindly ask me for it</li>
 </ul>
 
-<p>As you can see there are many ways to get in touch with me. If neither of those work, you can try smoke signals near my house, or sending a homing pigeon. I don&#39;t tweet.</p>
+<p>As you can see there are many ways to contact me. If neither of those work, you can try telepathy, my telepathic address is the same as my phone number.</p>
 
 </main>
 <footer class='footer'>
 <a href='/about-me'>
 Zequez
 </a>
-&copy; 2015
+<span class='copy'>
+&copy;
+</span>
+2016 - Kindly hosted by
+<a href='https://pages.github.com/'>Github pages</a>
 </footer>
 </div>
 <script src="/javascripts/all.js" type="text/javascript"></script>
-<!-- %aside -->
-<!-- %h2 Recent Articles -->
-<!-- %ol -->
-<!-- - blog.articles[0...10].each do |article| -->
-<!-- %li -->
-<!-- = link_to article.title, article -->
-<!-- %span= article.date.strftime('%b %e') -->
-<!-- %h2 Tags -->
-<!-- %ol -->
-<!-- - blog.tags.each do |tag, articles| -->
-<!-- %li= link_to "#{tag} (#{articles.size})", tag_path(tag) -->
-<!-- %h2 By Year -->
-<!-- %ol -->
-<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
-<!-- %li= link_to "#{year} (#{articles.size})", blog_year_path(year) -->
 </body>
 </html>

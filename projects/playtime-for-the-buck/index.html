@@ -10,7 +10,7 @@ Playtime For The Buck
 <!-- = current_page.data.title || (defined?(project) && project.name) -->
 <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
 <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
-<link href='/favicon.png' rel='icon' type='image/x-icon'>
+<link href='/favicon.ico?v=6' rel='icon' type='image/x-icon'>
 </head>
 <body class='projects projects_playtime-for-the-buck projects_playtime-for-the-buck_index'>
 <div class='container'>
@@ -25,9 +25,15 @@ Playtime For The Buck
 <div class='sidebar-button' id='sidebar-button'></div>
 <section class='sidebar-section'>
 <h1>
-<a href='/projects'>Projects</a>
+<a href='/projects'>Personal Projects</a>
 </h1>
 <ul class='projects-list'>
+<li>
+<a href='/projects/factorio-mods'>
+FactorioMods.com
+<small>(mid-2015)</small>
+</a>
+</li>
 <li>
 <a href='/projects/zequez-blog'>
 Zequez blog (this website)
@@ -115,18 +121,6 @@ Hellow world! Now in anglo!
 <h1>
 <a href='/about-me'>About me / Contact</a>
 </h1>
-<!-- - data.sidebar.items.each do |item| -->
-<!-- %h1 -->
-<!-- - if item.url -->
-<!-- %a{href: item.url} -->
-<!-- = item.name -->
-<!-- - else -->
-<!-- = item.name -->
-<!-- - if item.items -->
-<!-- %ul -->
-<!-- - item.items.each do |subitem| -->
-<!-- %li -->
-<!-- %a{href: subitem.url}= subitem.name -->
 </section>
 </nav>
 <main class='main'>
@@ -298,24 +292,13 @@ This page was last updated  7 July 2015
 <a href='/about-me'>
 Zequez
 </a>
-&copy; 2015
+<span class='copy'>
+&copy;
+</span>
+2016 - Kindly hosted by
+<a href='https://pages.github.com/'>Github pages</a>
 </footer>
 </div>
 <script src="/javascripts/all.js" type="text/javascript"></script>
-<!-- %aside -->
-<!-- %h2 Recent Articles -->
-<!-- %ol -->
-<!-- - blog.articles[0...10].each do |article| -->
-<!-- %li -->
-<!-- = link_to article.title, article -->
-<!-- %span= article.date.strftime('%b %e') -->
-<!-- %h2 Tags -->
-<!-- %ol -->
-<!-- - blog.tags.each do |tag, articles| -->
-<!-- %li= link_to "#{tag} (#{articles.size})", tag_path(tag) -->
-<!-- %h2 By Year -->
-<!-- %ol -->
-<!-- - blog.articles.group_by {|a| a.date.year }.each do |year, articles| -->
-<!-- %li= link_to "#{year} (#{articles.size})", blog_year_path(year) -->
 </body>
 </html>
