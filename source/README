@@ -27,3 +27,27 @@ checkout source
 cd build
 checkout master
 ```
+
+## Development and publishing scripts
+
+To mount the project for development or previewing something you're writing,
+use:
+
+```bash
+./server.sh
+```
+
+If you want to preview the static server of the build directory to see that everything
+is alright (it should be):
+
+```bash
+./static_server.sh
+```
+
+And after you're done and want to commit your changes to Github:
+
+```bash
+./publish.sh
+```
+
+Edit: Thank you, me from the past for writing these instructions and scripts.
