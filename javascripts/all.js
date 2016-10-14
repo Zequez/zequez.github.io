@@ -170,6 +170,21 @@
   eggInverter = new EggInverter;
 
 }).call(this);
+(function() {
+  var href, link, links, text, _i, _len;
+
+  links = document.querySelectorAll('[hiddenlink]');
+
+  for (_i = 0, _len = links.length; _i < _len; _i++) {
+    link = links[_i];
+    href = link.getAttribute('hiddenlink');
+    text = link.innerText;
+    console.log(href, btoa(href));
+    link.href = atob(href.slice(0, -1));
+    link.innerText = atob(text);
+  }
+
+}).call(this);
 
 (function() {
   var sidebar = document.getElementById('sidebar');
