@@ -1,0 +1,87 @@
+tag: ggfilter
+name: GGFilter.com
+year: late-2016
+
+factsheet:
+  "Website": "[ggfilter.com](http://www.ggfilter.com)"
+  "Time Invested": "+450hs"
+  "Tech/Skills Set": "Pure Ruby for the scrapers, Rails for the API server, React+Redux on the front end"
+  "Profits": "About -14US$ / month in Heroku fees"
+  "Release Date": "Late 2016"
+  "Start Date": "Mid 2015, but I had long periods of abandonment"
+  "Current Status": "It's my main personal project right now, I have a lot of features I want to implement"
+
+description: |
+  Alright, so, what *IS* GGFilter? GGFilter aims to be the ultimate
+  filterable database of games that allow you to find *Good Games*.
+
+  Right now it's a filterable database of Steam games, but I want to
+  include other stores like Oculus Home, GOG, The Humble Store, Origin. In that order.
+
+  ## The interface design
+
+  The current design is the one in the picture above. The original design was the
+  one below.
+
+  ![wide](/projects/ggfilter-v0.png)
+
+  After posting it on Reddit and getting some feedback on it's user _un_friendliness,
+  I decided to make a complete redesign.
+
+  The new design roughly follows the Material Design guidelines, and differently from
+  the original it also works on mobile.
+
+  ## Original idea
+
+  The idea started a few years ago with [PlaytimeForTheBuck](/projects/playtime-for-the-buck),
+  I just wanted to be able to sort games by the amount of average playing time
+  divided by the price. (I extracted this data from Steam reviews which are accompanied
+  by the amount of hours the reviewer played)
+
+  Anyway, that thing worked as a pure front end app. The whole database was being compressed
+  into a .json file and downloaded for each user. It was crazy, and I had it hosted on the
+  Github pages system, which I thought it was kinda clever at the time since I didn't
+  have to pay a dime, but afterwards I started to feel a little bad about abusing the system.
+  I never put any ads and it was open source tho, so it wasn't really THAT bad.
+
+  ## Architecture
+
+  The new app, renamed to GGFilter, is divided in 3 different projects:
+
+    - Scrapers
+    - Client
+    - Server
+
+  The **scrapers** live on their own Ruby gem and are a server dependency. It has
+  different submodules for each type of scraping; games list, game pages and reviews
+  from Steam, and video cards benchmarks (for the system requirements index),
+
+  The Rails **server** works mostly as an API and has the Rake tasks to run
+  the different scrapers on cronjobs. Right now it also serves the whole *client*
+  as a bundle (the client has a task that bundles itself into a Gem that is also required
+  by the server).
+
+  The **client** is made with React+Redux and it communicates
+  with the server through the API. There is no server rendering right now
+  (and thus zero SEO), but in the future I want to make the client also a Node rendering server, and the
+  Rails server just a pure API. But I don't want to spend more money on Heroku
+  right now.
+
+  ## Future
+
+  From a pragmatic point of view, at the moment it just looks pretty on my portfolio
+  really. For me it's a really fun playground to try out new new things, specially
+  in the front end.
+
+  In the future, as I wrote above, I would like to add other stores. I would like
+  to allow people to save and name filters (right now the filters are sharable but aren't
+  saved on the server, are encoded into the URL), get notifications when the filter
+  results change. I would like to make automated articles with top games
+  filters (think SEO). I would like to make a statistics section on the app to
+  create and publish interesting statistics about games (think /r/dataisbeautiful).
+  I would like to add other interesting things like data from Steam curators, and
+  easy access to popular "let's play" videos from YouTube next to the results.
+
+  In short, there is plenty of room for improvement!
+
+  And if you excuse me, I have to go publish this article and go job/gig hunting.

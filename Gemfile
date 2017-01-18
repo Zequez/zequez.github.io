@@ -20,3 +20,6 @@ gem "redcarpet"
 
 gem "middleman-autoprefixer"
 gem "middleman-syntax"
+
+gem "compass"
+gem "susy"
