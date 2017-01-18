@@ -29,6 +29,12 @@ Función de tiempo faltante para una fecha en PHP
 </h1>
 <ul class='projects-list'>
 <li>
+<a href='/projects/ggfilter'>
+GGFilter.com
+<small>(late-2016)</small>
+</a>
+</li>
+<li>
 <a href='/projects/factorio-mods'>
 FactorioMods.com
 <small>(mid-2015)</small>
@@ -168,27 +174,22 @@ Función de tiempo faltante para una fecha en PHP
 <span class="p">}</span>
 <span class="cp">?&gt;</span>
 </code></pre>
-
 <p>Para usarla lo único que tienen que hacer es:</p>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 <span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Faltan </span><span class="si">{</span><span class="nv">y</span><span class="si">}</span><span class="s2"> años, </span><span class="si">{</span><span class="nv">m</span><span class="si">}</span><span class="s2"> meses, </span><span class="si">{</span><span class="nv">w</span><span class="si">}</span><span class="s2"> semanas, </span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, </span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, </span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos para llegue Marty McFly"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2015-10-21"</span><span class="p">));</span>
 <span class="cp">?&gt;</span>
 </code></pre>
-
 <p>Lo cual devolvería algo como:</p>
 <pre class="highlight php"><code>#=&gt; Faltan 4 años, 8 meses, 3 semanas, 4 días, 3 horas, 18 minutos, 57 segundos para que llegue Marty McFly
 </code></pre>
-
 <p>También te permite escribir algo como:</p>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 <span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Faltan </span><span class="si">{</span><span class="nv">m</span><span class="si">}</span><span class="s2"> meses y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos para el 2012!"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2012-1-1"</span><span class="p">));</span>
 <span class="cp">?&gt;</span>
 </code></pre>
-
 <p>Lo cual devolvería algo como:</p>
 <pre class="highlight php"><code>Faltan 10 meses y 1998806 segundos para el 2012!
 </code></pre>
-
 <p>Ya que detecta la el interval de tiempo más grande y saltea los demás para mostrar los intervalos del mayor al menor&hellip;</p>
 
 <p>Y también podés escribir la fecha negativa para calcular el tiempo que pasó desde un momento dado:</p>
@@ -196,29 +197,24 @@ Función de tiempo faltante para una fecha en PHP
 <span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Hace </span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, </span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, </span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos que fue mi cumpleaños!"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2010/12/14"</span><span class="p">));</span>
 <span class="cp">?&gt;</span>
 </code></pre>
-
 <p>Lo cual devuelve:</p>
 <pre class="highlight php"><code>Hace -59 días, -20 horas, -54 minutos y -14 segundos que fue mi cumpleaños!
 </code></pre>
-
 <p>Ahh pero está negativo, no me sirve &not;&not;
 Bueno, para eso está el tercer parámetro! ^^</p>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 <span class="nx">dateTo</span><span class="p">(</span><span class="s2">"Hace </span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, </span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, </span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y </span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos que fue mi cumpleaños!"</span><span class="p">,</span> <span class="nb">time</span><span class="p">(),</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2010/12/14"</span><span class="p">));</span>
 <span class="cp">?&gt;</span>
 </code></pre>
-
 <p>Lo que te da este hermoso resultado</p>
 <pre class="highlight php"><code>Hace 59 días, 20 horas, 57 minutos y 17 segundos que fue mi cumpleaños!
 </code></pre>
-
 <p>Creo que con esos ejemplos ya queda bastante claro como va la función :P
 En un futuro tengo ganas de implementarle condicionales, para poder escribir algo como esto:</p>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 <span class="nx">dateTo</span><span class="p">(</span><span class="s2">"[Faltan [</span><span class="si">{</span><span class="nv">m</span><span class="si">}</span><span class="s2"> meses, ][</span><span class="si">{</span><span class="nv">d</span><span class="si">}</span><span class="s2"> días, ][</span><span class="si">{</span><span class="nv">h</span><span class="si">}</span><span class="s2"> horas, ][</span><span class="si">{</span><span class="nv">i</span><span class="si">}</span><span class="s2"> minutos y ][</span><span class="si">{</span><span class="nv">s</span><span class="si">}</span><span class="s2"> segundos para año nuevo!]]Feliz año nuevo!"</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="s2">"2012/1/1"</span><span class="p">));</span>
 <span class="cp">?&gt;</span>
 </code></pre>
-
 <p>Y que elimine las partes entre corchetes si el tiempo dentro de estos es 0 o negativo, para así poder reciclar más fácil la misma string&hellip;</p>
 
 <p>Bueno, eso es todo, espero que a alguien le sirva, yo sigo con mi &ldquo;proyectito&rdquo; que ya lo interrumpí demasiado con esto jaja.</p>
@@ -261,7 +257,6 @@ En un futuro tengo ganas de implementarle condicionales, para poder escribir alg
 <span class="p">}</span>
 <span class="cp">?&gt;</span>
 </code></pre>
-
 <p>El funcionamiento es básicamente el mismo, solo que en el primer parámetro ponés un array en vez de una string, con las keys de los nombres de los tiempos, y, m, w, d, h, i, s.</p>
 
 <p>Si alguien tiene ganas puede combinar las 2 funciones en una sola :P.
@@ -282,7 +277,7 @@ Zequez
 <span class='copy'>
 &copy;
 </span>
-2016 - Kindly hosted by
+2017 - Kindly hosted by
 <a href='https://pages.github.com/'>Github pages</a>
 </footer>
 </div>

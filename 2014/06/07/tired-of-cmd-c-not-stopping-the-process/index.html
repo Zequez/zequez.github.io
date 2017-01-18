@@ -29,6 +29,12 @@ Tired of Cmd+C not stopping the process?
 </h1>
 <ul class='projects-list'>
 <li>
+<a href='/projects/ggfilter'>
+GGFilter.com
+<small>(late-2016)</small>
+</a>
+</li>
+<li>
 <a href='/projects/factorio-mods'>
 FactorioMods.com
 <small>(mid-2015)</small>
@@ -171,7 +177,6 @@ user   4184  0.0  0.2   4364   836 pts/0    S+   01:38   0:00 grep --color<span 
 
 <span class="c"># *DIEEEEEEEEEEEEEEEEEE*</span>
 </code></pre>
-
 <p>Touching story.</p>
 
 <p>Anyway, what if it were EASIER THAN THAT?</p>
@@ -183,7 +188,6 @@ Use <span class="s2">"fg"</span> to <span class="k">return </span>to assprogram.
 <span class="o">[</span>1]+  4176 Stopped <span class="o">(</span>signal<span class="o">)</span>        assprogram
 <span class="nv">$&gt;</span><span class="nb">kill </span>4176
 </code></pre>
-
 <p>&ldquo;Wow that&rsquo;s really cool! I didn&rsquo;t know that you could do that!&rdquo;</p>
 
 <p>But wait! There is more! It can be EASIER!</p>
@@ -192,7 +196,6 @@ Use <span class="s2">"fg"</span> to <span class="k">return </span>to assprogram.
 <pre class="highlight shell"><code><span class="nb">alias </span><span class="nv">zpid</span><span class="o">=</span><span class="s2">"echo </span><span class="se">\`</span><span class="s2">jobs -l | grep -oh -w '[0-9]</span><span class="se">\\</span><span class="s2">{2,</span><span class="se">\\</span><span class="s2">}'</span><span class="se">\`</span><span class="s2">"</span>
 <span class="nb">alias </span><span class="nv">killz</span><span class="o">=</span><span class="s2">"kill </span><span class="se">\`</span><span class="s2">zpid</span><span class="se">\`</span><span class="s2"> &amp;&amp; fg"</span>
 </code></pre>
-
 <p>There, now if a nasty program doesn&rsquo;t want to stop you can Cmd+Z, and then type <code>killz</code> and you murder it for good.</p>
 
 <p>Note: I tried to check that the number was surounded by spaces on the grep regular expression, but grep regular expresions are fucked up and don&rsquo;t like spaces. So the shitty alternative I though was to just check if the number has 2 or more digits. So if you have a process with a number of 2 or more digits this will break.</p>
@@ -211,7 +214,7 @@ Zequez
 <span class='copy'>
 &copy;
 </span>
-2016 - Kindly hosted by
+2017 - Kindly hosted by
 <a href='https://pages.github.com/'>Github pages</a>
 </footer>
 </div>

@@ -6,13 +6,13 @@
     keys = [];
     konamiSequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
     return window.addEventListener('keyup', function(ev) {
-      var correctKeys, i, key, _i, _len;
+      var correctKeys, i, j, key, len;
       keys.push(ev.keyCode);
       if (keys.length > konamiSequence.length) {
         keys.shift();
       }
       correctKeys = 0;
-      for (i = _i = 0, _len = keys.length; _i < _len; i = ++_i) {
+      for (i = j = 0, len = keys.length; j < len; i = ++j) {
         key = keys[i];
         if (key === konamiSequence[i]) {
           correctKeys++;
@@ -171,12 +171,12 @@
 
 }).call(this);
 (function() {
-  var href, link, links, text, _i, _len;
+  var href, i, len, link, links, text;
 
   links = document.querySelectorAll('[hiddenlink]');
 
-  for (_i = 0, _len = links.length; _i < _len; _i++) {
-    link = links[_i];
+  for (i = 0, len = links.length; i < len; i++) {
+    link = links[i];
     href = link.getAttribute('hiddenlink');
     text = link.innerText;
     console.log(href, btoa(href));

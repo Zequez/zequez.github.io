@@ -60,7 +60,6 @@ user   4184  0.0  0.2   4364   836 pts/0    S+   01:38   0:00 grep --color&lt;sp
 
 &lt;span class="c"&gt;# *DIEEEEEEEEEEEEEEEEEE*&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Touching story.&lt;/p&gt;
 
 &lt;p&gt;Anyway, what if it were EASIER THAN THAT?&lt;/p&gt;
@@ -72,7 +71,6 @@ Use &lt;span class="s2"&gt;"fg"&lt;/span&gt; to &lt;span class="k"&gt;return &lt
 &lt;span class="o"&gt;[&lt;/span&gt;1]+  4176 Stopped &lt;span class="o"&gt;(&lt;/span&gt;signal&lt;span class="o"&gt;)&lt;/span&gt;        assprogram
 &lt;span class="nv"&gt;$&amp;gt;&lt;/span&gt;&lt;span class="nb"&gt;kill &lt;/span&gt;4176
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;&amp;ldquo;Wow that&amp;rsquo;s really cool! I didn&amp;rsquo;t know that you could do that!&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;But wait! There is more! It can be EASIER!&lt;/p&gt;
@@ -81,7 +79,6 @@ Use &lt;span class="s2"&gt;"fg"&lt;/span&gt; to &lt;span class="k"&gt;return &lt
 &lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="nb"&gt;alias &lt;/span&gt;&lt;span class="nv"&gt;zpid&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"echo &lt;/span&gt;&lt;span class="se"&gt;\`&lt;/span&gt;&lt;span class="s2"&gt;jobs -l | grep -oh -w '[0-9]&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;{2,&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s2"&gt;}'&lt;/span&gt;&lt;span class="se"&gt;\`&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
 &lt;span class="nb"&gt;alias &lt;/span&gt;&lt;span class="nv"&gt;killz&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"kill &lt;/span&gt;&lt;span class="se"&gt;\`&lt;/span&gt;&lt;span class="s2"&gt;zpid&lt;/span&gt;&lt;span class="se"&gt;\`&lt;/span&gt;&lt;span class="s2"&gt; &amp;amp;&amp;amp; fg"&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;There, now if a nasty program doesn&amp;rsquo;t want to stop you can Cmd+Z, and then type &lt;code&gt;killz&lt;/code&gt; and you murder it for good.&lt;/p&gt;
 
 &lt;p&gt;Note: I tried to check that the number was surounded by spaces on the grep regular expression, but grep regular expresions are fucked up and don&amp;rsquo;t like spaces. So the shitty alternative I though was to just check if the number has 2 or more digits. So if you have a process with a number of 2 or more digits this will break.&lt;/p&gt;
@@ -139,9 +136,8 @@ Use &lt;span class="s2"&gt;"fg"&lt;/span&gt; to &lt;span class="k"&gt;return &lt
 &lt;p&gt;On &lt;code&gt;/source&lt;/code&gt; change your branch to &lt;code&gt;source&lt;/code&gt;. And on &lt;code&gt;_site&lt;/code&gt; just delete everything and keep using &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now go to your &lt;code&gt;_config.yml&lt;/code&gt; on &lt;code&gt;source/&lt;/code&gt; folder. And add:&lt;/p&gt;
-&lt;pre class="highlight yaml"&gt;&lt;code&gt;  &lt;span class="s"&gt;destination&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;../_site&lt;/span&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;  &lt;span class="na"&gt;destination&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;../_site&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Now when you compile your site, the results are going to be on the &lt;code&gt;MyJekyll/_site&lt;/code&gt; folder. After you finish your editing just &lt;code&gt;cd&lt;/code&gt; to that folder and commit it as normal.&lt;/p&gt;
 
 &lt;p&gt;Done, no constant branch deleting and wizardly &lt;code&gt;filter-branch&lt;/code&gt; stuff.&lt;/p&gt;
@@ -204,7 +200,6 @@ Use &lt;span class="s2"&gt;"fg"&lt;/span&gt; to &lt;span class="k"&gt;return &lt
   &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;También pueden agregarlo a marcadores arrastrando el siguiente link a la barra de marcadores: 
 &lt;a href="javascript:setInterval(function(){    var pokes = document.querySelectorAll('.pokesDashboard .prs .uiIconText');   for(var i = 0; i &lt; pokes.length; ++i){      pokes[i].click();    }  }, 1000);"&gt;
     Autotocar

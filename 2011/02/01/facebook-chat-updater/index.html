@@ -29,6 +29,12 @@ Facebook Chat Updater
 </h1>
 <ul class='projects-list'>
 <li>
+<a href='/projects/ggfilter'>
+GGFilter.com
+<small>(late-2016)</small>
+</a>
+</li>
+<li>
 <a href='/projects/factorio-mods'>
 FactorioMods.com
 <small>(mid-2015)</small>
@@ -138,7 +144,6 @@ Facebook Chat Updater
 <p>Tras una tarde de ingeniería inversa en el debugger de Chrome logré descifrar de manera precaria como es que funciona el cliente de Facebook y di con la forma de actualizar la lista de amigos manualmente:</p>
 <pre class="highlight javascript"><code>  <span class="nx">Arbiter</span><span class="p">.</span><span class="nx">_instance</span><span class="p">.</span><span class="nx">_events</span><span class="p">[</span><span class="s2">"buddylist/initialized"</span><span class="p">][</span><span class="mi">0</span><span class="p">].</span><span class="nx">_forceUpdate</span><span class="p">();</span>
 </code></pre>
-
 <p>Si pegan el código en la barra de navegación con un &ldquo;javascript:&rdquo; detrás de este podrán ver como se actualiza la lista, y si tienen la consola abierta también verá como es que hace un llamado a la dirección &ldquo;http://www.facebook.com/ajax/chat/buddy<em>list.php?</em>_a=1&rdquo; mediante AJAX.</p>
 
 <p>Claro, podrían pegar el código con un setInterval cada vez que entran a Facebook&hellip; pero sería muy engorroso. Por esta razón decidí escribir una extensión para Google Chrome -la primera extensión que he hecho- que actualiza la lista de amigos conectados cada 3 segundos una vez que carga la página&hellip;</p>
@@ -164,7 +169,7 @@ Zequez
 <span class='copy'>
 &copy;
 </span>
-2016 - Kindly hosted by
+2017 - Kindly hosted by
 <a href='https://pages.github.com/'>Github pages</a>
 </footer>
 </div>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>
+Zequez -
+GGFilter.com
+</title>
+<!-- = current_page.data.title || (defined?(project) && project.name) -->
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+<link href='/favicon.ico?v=6' rel='icon' type='image/x-icon'>
+</head>
+<body class='projects projects_ggfilter projects_ggfilter_index'>
+<div class='container'>
+<header class='header'>
+<h1 class='author'>
+<a href='/'>Zequez</a>
+</h1>
+<p class='slogan'>Just a place to write about the stuff I make, do, think, and maybe eat</p>
+</header>
+<nav class='sidebar' id='sidebar'>
+<div class='sidebar-overlay' id='sidebar-overlay'></div>
+<div class='sidebar-button' id='sidebar-button'></div>
+<section class='sidebar-section'>
+<h1>
+<a href='/projects'>Personal Projects</a>
+</h1>
+<ul class='projects-list'>
+<li>
+<a href='/projects/ggfilter'>
+GGFilter.com
+<small>(late-2016)</small>
+</a>
+</li>
+<li>
+<a href='/projects/factorio-mods'>
+FactorioMods.com
+<small>(mid-2015)</small>
+</a>
+</li>
+<li>
+<a href='/projects/zequez-blog'>
+Zequez blog (this website)
+<small>(mid-2015)</small>
+</a>
+</li>
+<li>
+<a href='/projects/prismata-subreddit-extension'>
+Prismata Subreddit Extension
+<small>(late-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/playtime-for-the-buck'>
+Playtime For The Buck
+<small>(mid-2014)</small>
+</a>
+</li>
+<li>
+<a href='/projects/mapa-de-transporte'>
+Mapa de Transporte
+<small>(mid-2012)</small>
+</a>
+</li>
+<li>
+<a href='/projects/comicsen'>
+Comicsen
+<small>(late-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/target-shooter'>
+Target Shooter
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/series-follower'>
+Series Follower
+<small>(early-2011)</small>
+</a>
+</li>
+<li>
+<a href='/projects/qembole'>
+Qembole!
+<small>(2009-2010)</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/'>Latest posts</a>
+</h1>
+<ul class='latest-articles-list'>
+<li>
+<a href='/2014/06/07/tired-of-cmd-c-not-stopping-the-process/'>
+Tired of Cmd+C not stopping the process?
+<small> 7 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/06/01/beware-inner-html-ie/'>
+Beware of using innerHTML to remove all elements from a parent if you intend to reuse the elements later
+<small> 1 June 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/08/deploying-jekyll-with-plugins-to-github/'>
+Deploying Jekyll with plugins to Github pages: the easy way
+<small> 8 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/04/05/autoplay-not-working-on-one-device/'>
+Autoplay not working on one device on Windows
+<small> 5 April 2014</small>
+</a>
+</li>
+<li>
+<a href='/2014/03/30/hello-world/'>
+Hellow world! Now in anglo!
+<small>30 March 2014</small>
+</a>
+</li>
+</ul>
+<h1>
+<a href='/about-me'>About me / Contact</a>
+</h1>
+</section>
+</nav>
+<main class='main'>
+<div class='project'>
+<h1>GGFilter.com</h1>
+<table class='project-facts'>
+<thead>
+<tr>
+<th colspan='2'>
+<h2>Project Factsheet</h2>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Website:</td>
+<td>
+<p><a href="http://www.ggfilter.com">ggfilter.com</a></p>
+
+</td>
+</tr>
+<tr>
+<td>Time Invested:</td>
+<td>
+<p>+450hs</p>
+
+</td>
+</tr>
+<tr>
+<td>Tech/Skills Set:</td>
+<td>
+<p>Pure Ruby for the scrapers, Rails for the API server, React+Redux on the front end</p>
+
+</td>
+</tr>
+<tr>
+<td>Profits:</td>
+<td>
+<p>About -14US$ / month in Heroku fees</p>
+
+</td>
+</tr>
+<tr>
+<td>Release Date:</td>
+<td>
+<p>Late 2016</p>
+
+</td>
+</tr>
+<tr>
+<td>Start Date:</td>
+<td>
+<p>Mid 2015, but I had long periods of abandonment</p>
+
+</td>
+</tr>
+<tr>
+<td>Current Status:</td>
+<td>
+<p>It&#39;s my main personal project right now, I have a lot of features I want to implement</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<img alt='A screenshot of the web app' class='img-wide' src='/projects/ggfilter.png'>
+</p>
+<p>Alright, so, what <em>IS</em> GGFilter? GGFilter aims to be the ultimate
+filterable database of games that allow you to find <em>Good Games</em>.</p>
+
+<p>Right now it&#39;s a filterable database of Steam games, but I want to
+include other stores like Oculus Home, GOG, The Humble Store, Origin. In that order.</p>
+
+<h2>The interface design</h2>
+
+<p>The current design is the one in the picture above. The original design was the
+one below.</p>
+
+<p><img alt="wide" src="/projects/ggfilter-v0.png" /></p>
+
+<p>After posting it on Reddit and getting some feedback on it&#39;s user <em>un</em>friendliness,
+I decided to make a complete redesign.</p>
+
+<p>The new design roughly follows the Material Design guidelines, and differently from
+the original it also works on mobile.</p>
+
+<h2>Original idea</h2>
+
+<p>The idea started a few years ago with <a href="/projects/playtime-for-the-buck">PlaytimeForTheBuck</a>,
+I just wanted to be able to sort games by the amount of average playing time
+divided by the price. (I extracted this data from Steam reviews which are accompanied
+by the amount of hours the reviewer played)</p>
+
+<p>Anyway, that thing worked as a pure front end app. The whole database was being compressed
+into a .json file and downloaded for each user. It was crazy, and I had it hosted on the
+Github pages system, which I thought it was kinda clever at the time since I didn&#39;t
+have to pay a dime, but afterwards I started to feel a little bad about abusing the system.
+I never put any ads and it was open source tho, so it wasn&#39;t really THAT bad.</p>
+
+<h2>Architecture</h2>
+
+<p>The new app, renamed to GGFilter, is divided in 3 different projects:</p>
+
+<ul>
+<li>Scrapers</li>
+<li>Client</li>
+<li>Server</li>
+</ul>
+
+<p>The <strong>scrapers</strong> live on their own Ruby gem and are a server dependency. It has
+different submodules for each type of scraping; games list, game pages and reviews
+from Steam, and video cards benchmarks (for the system requirements index),</p>
+
+<p>The Rails <strong>server</strong> works mostly as an API and has the Rake tasks to run
+the different scrapers on cronjobs. Right now it also serves the whole <em>client</em>
+as a bundle (the client has a task that bundles itself into a Gem that is also required
+by the server).</p>
+
+<p>The <strong>client</strong> is made with React+Redux and it communicates
+with the server through the API. There is no server rendering right now
+(and thus zero SEO), but in the future I want to make the client also a Node rendering server, and the
+Rails server just a pure API. But I don&#39;t want to spend more money on Heroku
+right now.</p>
+
+<h2>Future</h2>
+
+<p>From a pragmatic point of view, at the moment it just looks pretty on my portfolio
+really. For me it&#39;s a really fun playground to try out new new things, specially
+in the front end.</p>
+
+<p>In the future, as I wrote above, I would like to add other stores. I would like
+to allow people to save and name filters (right now the filters are sharable but aren&#39;t
+saved on the server, are encoded into the URL), get notifications when the filter
+results change. I would like to make automated articles with top games
+filters (think SEO). I would like to make a statistics section on the app to
+create and publish interesting statistics about games (think /r/dataisbeautiful).
+I would like to add other interesting things like data from Steam curators, and
+easy access to popular &quot;let&#39;s play&quot; videos from YouTube next to the results.</p>
+
+<p>In short, there is plenty of room for improvement!</p>
+
+<p>And if you excuse me, I have to go publish this article and go job/gig hunting.</p>
+
+</div>
+
+</main>
+<footer class='footer'>
+<a href='/about-me'>
+Zequez
+</a>
+<span class='copy'>
+&copy;
+</span>
+2017 - Kindly hosted by
+<a href='https://pages.github.com/'>Github pages</a>
+</footer>
+</div>
+<script src="/javascripts/all.js" type="text/javascript"></script>
+</body>
+</html>
