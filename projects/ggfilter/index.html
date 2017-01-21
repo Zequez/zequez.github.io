@@ -237,20 +237,11 @@ I never put any ads and it was open source tho, so it wasn&#39;t really THAT bad
 <li>Server</li>
 </ul>
 
-<p>The <strong>scrapers</strong> live on their own Ruby gem and are a server dependency. It has
-different submodules for each type of scraping; games list, game pages and reviews
-from Steam, and video cards benchmarks (for the system requirements index),</p>
+<p>The <strong>scrapers</strong> live on their own Ruby gem and are a server dependency. It has different submodules for each type of scraping; games list, game pages and reviews from Steam, and video cards benchmarks (for the system requirements index),</p>
 
-<p>The Rails <strong>server</strong> works mostly as an API and has the Rake tasks to run
-the different scrapers on cronjobs. Right now it also serves the whole <em>client</em>
-as a bundle (the client has a task that bundles itself into a Gem that is also required
-by the server).</p>
+<p>The Rails <strong>server</strong> works mostly as an API and has the Rake tasks to run the different scrapers on cronjobs. Right now it also serves the whole <em>client</em> as a bundle (the client has a task that bundles itself into a Gem that is also required by the server).</p>
 
-<p>The <strong>client</strong> is made with React+Redux and it communicates
-with the server through the API. There is no server rendering right now
-(and thus zero SEO), but in the future I want to make the client also a Node rendering server, and the
-Rails server just a pure API. But I don&#39;t want to spend more money on Heroku
-right now.</p>
+<p>The <strong>client</strong> is made with React+Redux and it communicates with the server through the API. There is no server rendering right now (and thus zero SEO), but in the future I want to make the client also a Node rendering server, and the Rails server just a pure API. But I don&#39;t want to spend more money on Heroku right now.</p>
 
 <h2>Future</h2>
 

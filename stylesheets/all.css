@@ -385,70 +385,74 @@ a {
   margin-left: 0;
   width: 25%; }
 /* line 65, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+.main .img-profile {
+  border-radius: 100px;
+  margin-top: -2rem; }
+/* line 69, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .main p, .main pre, .main ul, .main blockquote {
   margin-bottom: 24px; }
-  /* line 67, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+  /* line 71, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
   .main p:last-child, .main pre:last-child, .main ul:last-child, .main blockquote:last-child {
     margin-bottom: 0; }
-/* line 70, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 74, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .main pre {
   padding: 12px;
   font-family: monospace;
   overflow: auto; }
-/* line 76, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 80, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .main p code {
   background: rgba(0, 0, 0, 0.05);
   font-family: monospace;
   padding: 3px 6px; }
-/* line 81, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 85, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .main em {
   font-style: italic; }
-/* line 83, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 87, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .main strong {
   font-weight: bold; }
-/* line 86, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 90, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .main ul {
   padding-left: 24px; }
-  /* line 88, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+  /* line 92, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
   .main ul li:before {
     content: "» ";
     font-weight: bold; }
-/* line 92, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 96, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .main blockquote {
   padding-left: 12px;
   background: rgba(0, 0, 0, 0.02);
   border-left: solid 12px #7c7c7c;
   color: #7c7c7c; }
 
-/* line 100, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 104, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .projects .main .project h1 {
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 72px;
   text-align: center; }
-/* line 105, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 109, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .projects .main .update-notice {
   display: block;
   text-align: right;
   color: #7c7c7c;
   font-size: 0.8em; }
 
-/* line 111, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+/* line 115, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
 .project-facts {
   padding: 24px;
   width: 100%;
   border-collapse: separate;
   background: #343535;
   color: #fefefe; }
-  /* line 118, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+  /* line 122, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
   .project-facts h2 {
     margin-bottom: 24px; }
-  /* line 122, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+  /* line 126, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
   .project-facts tbody td:first-child {
     padding-right: 20px;
     vertical-align: top;
     white-space: nowrap; }
-  /* line 126, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
+  /* line 130, /Users/zequez/Sync/projects/ruby/ZequezMiddleman/source/stylesheets/_content.css.sass */
   .project-facts tbody td:last-child {
     color: #7c7c7c; }
 
