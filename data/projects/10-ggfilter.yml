@@ -52,20 +52,11 @@ description: |
     - Client
     - Server
 
-  The **scrapers** live on their own Ruby gem and are a server dependency. It has
-  different submodules for each type of scraping; games list, game pages and reviews
-  from Steam, and video cards benchmarks (for the system requirements index),
+  The **scrapers** live on their own Ruby gem and are a server dependency. It has different submodules for each type of scraping; games list, game pages and reviews from Steam, and video cards benchmarks (for the system requirements index),
 
-  The Rails **server** works mostly as an API and has the Rake tasks to run
-  the different scrapers on cronjobs. Right now it also serves the whole *client*
-  as a bundle (the client has a task that bundles itself into a Gem that is also required
-  by the server).
+  The Rails **server** works mostly as an API and has the Rake tasks to run the different scrapers on cronjobs. Right now it also serves the whole *client* as a bundle (the client has a task that bundles itself into a Gem that is also required by the server).
 
-  The **client** is made with React+Redux and it communicates
-  with the server through the API. There is no server rendering right now
-  (and thus zero SEO), but in the future I want to make the client also a Node rendering server, and the
-  Rails server just a pure API. But I don't want to spend more money on Heroku
-  right now.
+  The **client** is made with React+Redux and it communicates with the server through the API. There is no server rendering right now (and thus zero SEO), but in the future I want to make the client also a Node rendering server, and the Rails server just a pure API. But I don't want to spend more money on Heroku right now.
 
   ## Future
 

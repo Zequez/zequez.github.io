@@ -14,49 +14,45 @@ factsheet:
 
 description: |
   ## A little bit about the project
-  
+
   Mapa de Transporte was my first serious Rails project. Back when I was working on this,
   I was on a limbo-year between school and university, so I had plenty of freetime to learn
   a new language and a new framework.
-  
+
   ### Why?
-  
+
   I live in Mar del Plata, a city in Argentina, and we have a seriously shitty public transport,
   and I noticed there wasn't any good place to see all the buses routes in a easy fashion,
   to know which buses to take. So I decided to create one, and
   Mapa de Transporte was the result of that idea.
-  
+
   ### What does it do?
-  
-  The app lets you see all the routes at the same time, and instantly
-  find the closest buses to connect 2 points in the city. I'm a data freak, that's
-  why I tried made all the data easily accessible and visible at the same time.
-  The app also let's you set the distance you're willing to walk to filter buses.
-  And it displays all the charging spots to recharge the bus card in the whole city.
-  
+
+  The app lets you see all the routes at the same time, and instantly find the closest buses to connect 2 points in the city. I'm a data freak, that's why I tried made all the data easily accessible and visible at the same time. The app also let's you set the distance you're willing to walk to filter buses. And it displays all the charging spots to recharge the bus card in the whole city.
+
   The app also has a backend that lets you administer all the buses and buses routes. For the
   most part it was made with [ActiveAdmin](http://activeadmin.info/) although with some heavy
   JavaScripting for the routes editor.
-  
+
   ![wide](/projects/mapa-de-transporte-backend.png)
-  
+
   > Here is a screenshot of the backend route editor. The bus-company website provided
   > a list of streets that the bus crossed, so I pasted the list on the box there, and
   > the script tried to highlight the street I had the caret on. This way I could add the
   > route with less effort. All the routes were added manually, was a colossal work.
-  
+
   ### What happened?
-  
+
   I learned a lot from this app, Rails, CoffeeScript, Google Maps, complex front-end
   organization, you name it!
-  
+
   And while it still receives around 8k hits per month,
   and it has a pretty decent Google positioning, I'm not currently very interested on
   continue the development, the last update was in 2013. There are many alternatives now,
   even mobile, so is not such a critical issue as it was :).
-  
+
   ### What is the plan for the future?
-  
+
   I might update it in the future, but in reality, what I really want is a
   complete rewrite. You see, back then, I didn't use any front-end framework to make
   the app, and although I got pretty decent at separating everything in CoffeeScript classes,

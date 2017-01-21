@@ -14,82 +14,76 @@ factsheet:
 
 description: |
   ## That looks awesome! What is it though?
-  
-  I know, I know, the best thing since sliced bread, right? Well, initially
-  when Steam started the reviews system, I saw that they included the playing time of the person for each
-  review. So I though, *"wouldn't it be nice to see the average playing time for every game?"*
-  and if you divide it by the price of the game, you can see... the *playtime for the buck*.
-  
-  The idea was to scrap all the games and  all the reviews and make a database with them, then I could
-  analyze the data and sort it however I wanted! I ended up adding much more than playtime/buck, you can
-  filter and sort games in multiple ways. Want to check the
-  [best rated RPG games, with more than 50 reviews, that cost less than 5 dollars, and are on sale](http://playtimeforthebuck.com/best-reviews/#tags=rpg&sale=0~), done.
-  
+
+  I know, I know, the best thing since sliced bread, right? Well, initially when Steam started the reviews system, I saw that they included the playing time of the person for each review. So I though, *"wouldn't it be nice to see the average playing time for every game?"* and if you divide it by the price of the game, you can see... the *playtime for the buck*.
+
+  The idea was to scrap all the games and  all the reviews and make a database with them, then I could analyze the data and sort it however I wanted! I ended up adding much more than playtime/buck, you can filter and sort games in multiple ways. Want to check the [best rated RPG games, with more than 50 reviews, that cost less than 5 dollars, and are on sale](http://playtimeforthebuck.com/best-reviews/#tags=rpg&sale=0~), done.
+
   I'm a data-fan so when I look at that big-ass table with
   unlimited filters and sorting mechanisms, the sheer density and the ease of accessibility of the data
   makes me puke rainbows.
-  
+
   ## How was it done?
-  
+
   This is my favorite part, the whole system runs as a static page. I feel guilty for
   abusing the Github pages, but hey, I'm not putting any ads, and I'm not targeting profits yet,
   so I guess it's OK.
-  
+
   ### The scraper
-  
+
   The scrapping it's done with a Ruby gem, [PTB-Scrapper](https://github.com/PlaytimeForTheBuck/ptb-scrapper),
   it would be unfair to call it a script. And yes, I do realize I misspelled scraper, and added an extra *p*, but
   when it was too late when the first guy pointed it out.
-  
+
   The the scraped data is stored on a SQLite database, and then it's converted to a single *json* file for
   the front end to use.
-  
+
   The actual Ruby gem creates a few rake tasks to facilitate the scraping of all the things. I don't want to
   go into too much detail, but the source it's there.
-  
+
   ### The front end
-  
+
   OK I kind of messed up with this one? Why, you might ask? Well multiple reasons.
-  
+
   - Error 1: I decided to use Jekyll to build it
   - Error 2: I decided to not use any front end framework
   - Error 3: I didn't write any tests
-  
+
   So the whole front end infrastructure it's hanging from a thread, that's why
   I want to rewrite it and make it more solid. At least I separated everything with classes.
-  
+
   It works like this. It loads a single page, and then it loads the *big-ass* JSON file from the
   server. And then it just works like a regular front end app. There are many quirks, like the handling
   of the URL, since I tried to make some pre-rendering for SEO purposes, which worked pretty well, I mean
   I'm not sure if it helped the SEO, but the pre-rendering worked.
-  
+
   ### The builder
-  
+
   A third project? Yes, a third project.
-  
+
   The builder takes care of the following:
-  
+
   - Includes the scraper and the front end as gems
   - Runs the cronjobs to get the data and build the front end
   - Pre-renders the front page, and other pages with pre-made searches with pretty URLs using PhantomJS
   - Commits the generated page to the static page
   - Pushes the static page to Github
-  
+
   ## What happened?
-  
+
   Well I didn't make a lot of publicity, I posted it in a few relevant subreddits, and it got a pretty good reception
   and I always comment with a link if I find someone asking for something that PlaytimeForTheBuck solves.
-  
+
   I kind of let it go for a while, I just have a cronjob running in my personal computer that takes care of updating.
   Last week I realized that I was starting to get a pretty good amount of visits! On May it hit 1k! And June 1.6k!
   And then I realized it was mostly spam traffic from some russian sites, which was a bummer, but hey,
   the good Reddit reception was still there.
-  
+
   ## What are the plans?
-  
+
   I want to rewrite it with a legitimate back-end, probably Rails, and a solid front-end framework, which I'm still
   undecided, I did have experience with Angular in my last job, but I don't really like it too much, and I need
   something really fast.
-  
+
   I want to add features like data from different stores, system requirements for games,
   average value of steam cards, a top-list review system for SEO purposes and getting the name out there!
