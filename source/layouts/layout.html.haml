@@ -31,13 +31,7 @@
                   = project.name
                   %small (#{project.year})
           %h1
-            %a{href: '/'} Latest posts
-          %ul.latest-articles-list
-            - blog.articles[0...5].each do |article|
-              %li
-                %a{href: article.url}
-                  = article.title
-                  %small= article.date.strftime("%e %B %Y")
+            %a{href: '/'} Blog posts
           %h1
             %a{href: '/about-me'} About me / Contact
       %main.main
