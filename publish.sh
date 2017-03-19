@@ -1,4 +1,4 @@
-middleman build
+bundle exec middleman build
 read -p "Press enter to continue"
 
 git add -A
