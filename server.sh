@@ -1,1 +1,1 @@
-middleman server --reload-paths data/
+bundle exec middleman server --reload-paths data/

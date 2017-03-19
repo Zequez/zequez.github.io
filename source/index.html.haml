@@ -1,9 +1,11 @@
 ---
-title: 'Stuff I make'
+title: 'Stuff I Made'
 ---
 
-.blog-index
-  %h1 Blog
-  - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-    %h2= year
-    = partial 'articles_list', locals: { articles: articles }
+.projects-index
+  %h1 Projects
+  %ul.projects
+    - data.projects_list.each do |project|
+      %li.project
+        = link_to project.name, "/projects/#{project.tag}"
+        %small - #{project.year}

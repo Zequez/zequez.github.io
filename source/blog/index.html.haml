@@ -1,0 +1,9 @@
+---
+title: 'Stuff I Wrote'
+---
+
+.blog-index
+  %h1 Blog (mostly old stuff)
+  - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    %h2= year
+    = partial 'articles_list', locals: { articles: articles }
