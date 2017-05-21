@@ -4,7 +4,7 @@ year: mid-2014
 updated: 2015-07-07
 
 factsheet:
-  "Website": "[http://playtimeforthebuck.com](http://playtimeforthebuck.com)"
+  "Website": "[http://playtimeforthebuck.zequez.com](http://playtimeforthebuck.zequez.com) (moved from playtimeforthebuck.com)"
   "Github": "[Github/PlaytimeForTheBuck](https://github.com/PlaytimeForTheBuck/)"
   "Time Invested": "102hs ([public work log](https://docs.google.com/spreadsheets/d/1P6KkLv2ZW3LvDwTFNAwkkbrNakrsZ_vSTRQfTdC1G30/edit?usp=sharing))"
   "Skills Set": "Ruby with Rspec for the scraper, JavaScript/CoffeeScript for the front end"
